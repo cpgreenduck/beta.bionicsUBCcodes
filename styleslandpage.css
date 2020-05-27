@@ -5,14 +5,15 @@
 * Browsers: last 4 version
 */
 
-@import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');
+/*@import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');*/
 
 /* Frontpage-item styles*/
 .frontpage-item{
 	font-size:1em;
 	font-family:sans-serif;
 	width:100%;
-	padding:20px;
+	/*padding:20px;*/
+	padding:0;
 	min-width:600px;
 	/*background-color:	#c2e3fc;*/
 	background-color:#fff;

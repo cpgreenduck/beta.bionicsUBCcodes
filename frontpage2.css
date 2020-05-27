@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');
+/*@import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');*/
 
 .logo{
 	top:150px;
@@ -35,12 +35,12 @@
 	float:none;
 	display:block;
 	z-index:4;
-	padding:0 20px 0 20px;
 	opacity:0.9;
 }
 #about h4{
 	font-size:25px;
 	color:#fff;
+	margin:20px;
 }
 
 /*Changes to man.css*/
@@ -112,7 +112,8 @@
 	-webkit-transition:all 1s ease-out;
 	-o-transition:all 1s ease-out;
 	transition:all 1s ease-out;
-	background-size:contain;
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 #teamimg .frontpage-item.heading{
 	color:#fff;

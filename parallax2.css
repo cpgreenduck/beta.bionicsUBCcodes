@@ -7,7 +7,7 @@
 
 /* Tiny reset thingy */
 body,html{margin:0;padding:0;}
-body{overflow-y:scroll;overflow-x:hidden;perspective:1px;}
+body{overflow-y:scroll;overflow-x:hidden;perspective:1px;height:100%;}
 
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
@@ -24,6 +24,8 @@ body{overflow-y:scroll;overflow-x:hidden;perspective:1px;}
           perspective: 2px;
   perspective-origin: 0 0;
  /*-webkit-backface-visibility:inherit;*/
+ margin:0;
+ padding:0;
 }
 .section {
   /* Needed for children to be absolutely positioned relative to the parent. */
@@ -58,25 +60,31 @@ body{overflow-y:scroll;overflow-x:hidden;perspective:1px;}
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
 .parallax{
-	transform-origin:0 0;
+	position:relative;
+	background-attachment:fixed;
+	background-position:top center;
+	background-size:cover;
 	/*transform: translateZ(0x);*/
 	/*transform: translateZ(-2px) scale(3);*/
 }
 
 .section.parallax.bg1 {
 	height:1000px;
+	background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png');
 }
 .section.parallax.bg2{
 	height:800px;
+	background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
 }
 .section.parallax.bg3{
 	height:1000px;
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png");
 }
-.parallax::after {
-  /* Display and position the pseudo-element */
+/*.parallax::after {
+  /* Display and position the pseudo-element 
   content: " ";
   position:fixed;
-  /*-webkit-backface-visibility:visible;*/
+  /*-webkit-backface-visibility:visible;
   top: 0;
   right: 0;
   bottom: 0;
@@ -84,16 +92,16 @@ body{overflow-y:scroll;overflow-x:hidden;perspective:1px;}
   /* Move the pseudo-element back away from the camera,
    * then scale it back up to fill the viewport.
    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  /*transform: translateZ(-1px) scale(1.5);*/
+  /*transform: translateZ(-1px) scale(1.5);
   background-attachment:fixed;
   transform: translate3d(0,0,0) translateZ(0x);
   -webkit-transform: translate3d(0,0,0);
   /*will-change:transform;*/
-  /* Force the background image to fill the whole element. */
+  /* Force the background image to fill the whole element. 
   background-size: cover;
   background-repeat:repeat-y;
   background-position: center;
-  /* Keep the image from overlapping sibling elements. */ 
+  /* Keep the image from overlapping sibling elements.  
   z-index: -1;
 }
 
@@ -107,6 +115,6 @@ background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png");
 	background-position:bottom;
 }
-
+*/
 
 	
