@@ -1,92 +1,60 @@
 /* Tiny reset thingy */
-/*try position fixed https://www.cssscript.com/fixed-position-parallax-scroll-effect-pure-css/*/
+/*based on https://codepen.io/keithclark/pen/JycFw*/
 body,html{margin:0;padding:0;}
+
+/*html{overflow:hidden;}
+body{perspective: 1px; transform-style: preserve-3d; overflow-y:scroll; overflow-x:hidden;}*/
 
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
    * 100vh is the full height of the viewport. */
  /* height: 100vh;*/
+ /*height:1000px;*/
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
   overflow-x: hidden;
   overflow-y:auto;
   /* Enable scrolling on the page. */
+  /*overflow-y: auto;*/
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  /*perspective: 2px;*/
+  perspective: 2px;
 }
 
 .section {
   /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  position:relative;
   /*height: 50vh;*/
   /*height:30vh;*/
   height:300px;
+  
   /* For text formatting. */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.parallax-content {
-	position:relative;
-	overflow:hidden;
-	height:80vh;
-	-webkit-background-size:cover;
-	background-size:cover;
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat:no-repeat;
-	width:100%;
-}
-
-.parallax{
-	position:absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	z-index:0;
-}
-.parallax:before{
-	content: "";
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	height:100%;
-	z-index:0;
-	background-position:center top;
-	background-repeat:no-repeat;
-	background-size:120% auto;
-}	
-	
-/*
 .parallax::after {
-  /* Display and position the pseudo-element 
-  content: " ";
+  /* Display and position the pseudo-element */
+  content: "";
   position:absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  /*backface-visibility:visible;
   /* Move the pseudo-element back away from the camera,
    * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. 
-  transform: translateZ(0px) translate3d(0,0,0);
-  will-change:transform;
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  /*transform: translateZ(-1px) scale(1.5);*/
   background-attachment:fixed;
-  /* Force the background image to fill the whole element. 
+  /* Force the background image to fill the whole element. */
   background-size: 200vh;
   background-repeat:no-repeat;
   background-position: center;
-  /* Keep the image from overlapping sibling elements.  
+  /* Keep the image from overlapping sibling elements. */ 
   z-index: 0;
-  
-}*/
+ /* background-color:blue;*/
+}
 
-/* The styling for the static div. */
 .static {
 	height:auto;
 	background-color:rgba(0,0,0,0);
@@ -100,25 +68,27 @@ body,html{margin:0;padding:0;}
 	z-index:1;
 }
 
+
 /* Sets the actual background images to adorable kitties. This part is crucial. */
-.bg1, .bg3 {
+
+.bg1 {
 height:1000px;
 }
-/*.bg1::after {
+.parallax.bg1::after{
   background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
-}*/
-.bg1, .bg3{ background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');}
+  
+}
 
-.bg2{
+.bg2 {
 	height:800px;
 }
-.bg2{
-background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');}
-/*.bg2::after {
+.bg2::after {
   background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
 }
-
+.bg3 {
+	height:1000px;
+}
 .bg3::after {
-  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
-}*/
+background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
+}
 
