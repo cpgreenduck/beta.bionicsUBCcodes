@@ -1,108 +1,15 @@
-@import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');
-#about{
-	width:100%;
-	clear:both;
-	border-radius:0px;
-	background-color:rgba(31,31,79,0.8);
-	font-color:white;
-	font-size:30px;
-	border-width:0px;
-	top:50px;
-	float:none;
-	display:block;
-}
-#about h4{
-font-size:25px;
-}
-.frontpage-item>h1{
-	color:#000;
-	opacity:0.6;
-	font-size:40px;
-	margin:20px;
-	font-weight:bolder;
-}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
+/*@import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');*/
 
-
-.frontpage-item.heading{
-	min-height:30px;
-	height:70px;
-	padding:0 !important;
-	margin:0 !important;
-	-webkit-transition:all 1s ease-out;
-	background-color:transparent;
-	min-width:300px;
-}
-.frontpage-item.heading:hover{
-	transform:scale(1.1);
-	-webkit-transition: all 1s ease-in;
-}
-.frontpage-item.desc{
-	padding:10px;
-	min-height:50px;
-}
-	
-.frontpage-item>h2{
-	font-size:32px;
-	margin:20px;
-	font-weight:bolder;
-	opacity:0.6;
-}
-
-.frontpage-item>h3{
-	color:#000;
-	font-weight:normal;
-	opacity:0.6;
-}
-	
-
-#about a, #about h3, #about h4{
-	color:#fff;
-	font-size:20px;
-}
-
-.container1{
-	width:80%;
-	clear:both;
-	position:relative;
-	margin-top:0;
-	margin-left:auto;
-	margin-right:auto;
-	float:none;
-	display:block;
-}
-
-.section.parallax.bg1 {
-	height:1000px;
-	width:100%;
-	background-size:100%;
-	background-repeat:repeat-y;
-}
-.parallax::after{
-background-repeat:repeat-y;
-}
-
-.section.parallax.bg2{
-	height:800px;
-	width:100%;
-	}
-	
-.section.parallax.bg3{
-	width:100%;
-	}
-
-.bg1::after{
-background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png');
-}
-
-.section.static.static_par_0ht{
-display:block;
-padding:0;
-margin:0;
-height:0;
-}
 .logo{
-	top:150px;
+	position:relative;
+	z-index:1;
 	overflow:hidden;
 	margin-left:auto;
 	margin-right:auto;
@@ -116,43 +23,73 @@ height:0;
 	background-repeat:no-repeat;
 	background-position:center;
 }
-#clickHover{
-position:absolute;
-background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/hoverman.png');
-background-repeat:no-repeat;
-background-size:contain;
-background-position:center;
-height:650px;
-width:100%;
-top:0px;
-left:0px;
-z-index:10;
-transition:all 1s ease-out;
+#about{
+	aos_init;
+	aos_animate;
+	width:100%;
+	clear:both;
+	border-radius:0px;
+	background-color:rgba(31,31,79,0.8);
+	font-color:white;
+	border-width:0px;
+	top:50px;
+	float:none;
+	display:block;
+	z-index:1;
+	opacity:0.9;
+}
+#about h4{
+	font-size:25px;
+	color:#fff;
+	margin:20px;
+}
+
+/*Changes to man.css*/
+.container1{
+	width:80%;
+}
+/* End changes to man stylesnew.css*/
+
+/*Styles Research/Accomplish */
+#accomplish{
+	text-align:center;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap:wrap;
+	    flex-wrap:wrap;
 }
 
 #research-item-cont{
-clear:both;
-position:relative;
-width:90% !important;
-margin-left:0;
-margin-right:0;
+	clear:both;
+	position:relative;
+	width:90%;
+	margin:auto 0 auto 0;
+	overflow:hidden;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
+	text-align:center;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
-.research-item{
-width:100px !important;
-margin:10px !important;
-padding:0 !important;
-max-height:150px !important;
-}
-
+/*News and Research highlights*/
 #research{
 	margin-top:-800px;
 	opacity:1;
-	background-color:rgba(255,255,255,0.8);
-	overflow:hidden;
+	background-color:rgba(0,0,0,0);
 	max-height:650px;
 }
-
 .hilite{
 	width:45%;
 	margin:20px;
@@ -160,7 +97,6 @@ max-height:150px !important;
 	text-align:center;
 	min-width:400px;
 }
-
 .hilite .postContainer{
 	background-color:#fff;
 	min-height:80px;
@@ -170,30 +106,16 @@ max-height:150px !important;
 	min-width:400px;
 }
 
-
-.bg3::after{
-background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png");
-}
-
+/*Team Styles*/
 #teamimg{
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/membersbg.png");
-	height:100px;
+	max-height:120px;
+	-webkit-transition:all 1s ease-out;
+	-o-transition:all 1s ease-out;
 	transition:all 1s ease-out;
-}
-#partnersmapCont{
-	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/mapdraft1.png");
-	min-height:500px;
-	background-size:800px;
-	margin-top:-850px;
-	background-color:transparent;
-	z-index=-1;
-	overflow:hidden;
-	background-repeat:no-repeat;
-	background-position:center;
-	position:relative;
-	margin-left:0;
-	margin-right:0;
-	padding:0;
+
+	background-size:contain;
+	background-repeat:repeat-x;
 }
 #teamimg .frontpage-item.heading{
 	color:#fff;
@@ -204,15 +126,27 @@ background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.
 }
 #teamimg:hover{
 	opacity:0.8;
-	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	    -ms-transform:scale(1.1);
+	        transform:scale(1.1);
+	-webkit-transition:all 1s ease-in;
+	-o-transition:all 1s ease-in;
 	transition:all 1s ease-in;
 }
-.bg3{
-	height:1000px;
+
+/*Partners Styles*/
+#partnersmapCont{
+	min-height:500px;
+	background-size:800px;
+	margin-top:-850px;
+	background-color:transparent;
+	z-index:5;
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/mapdraft1.png");
+	background-repeat:no-repeat;
+	background-position:center;
 }
-.bg3::after{
-	background-position:bottom;
-	}
+
+
 #partnerslabel, #workwithus{
 	background-color:rgba(31,31,79,0.8);
 	margin-top:-1000px;
@@ -244,7 +178,9 @@ background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.
 	text-align:center;
 	height:150px;
 	display:inline-block;
-	transform:scale(1.1) translateX(30px);
+	-webkit-transform:scale(1.1) translateX(30px);
+	    -ms-transform:scale(1.1) translateX(30px);
+	        transform:scale(1.1) translateX(30px);
 }
 #workwithus .frontpage-item.heading>a h1{
 	color:#fff !important;

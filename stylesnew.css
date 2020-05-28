@@ -1,26 +1,23 @@
 .container1 {
    /*position:absolute;*/
    position:relative;
-  
+   z-index:1;
 	overflow:hidden;
 /*	width: 100%;*/
-	width:99.4%
-	
+	width:99.4%;
 	min-width: 300px;
-	margin:0;
+	margin:auto;
 	padding:0;
 	margin-bottom:-20px;
 	border-style:solid;
 	border-radius:10px;
 	border-color:grey;
 	background-color:#fff;
-/*	height:600px;*/
 	height:660px;
 	text-align: center;
 	position: relative;
 	display: block;
 	/*background-color:#fff;*/
-
 	transition: all 1s ease;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;

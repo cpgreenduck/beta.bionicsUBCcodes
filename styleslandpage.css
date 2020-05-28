@@ -1,175 +1,177 @@
-@import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');
-p, h1, h2, h3, a{
-	font-family:sans-serif;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
-	color:#185685;
-	text-decoration:none;
+/*@import url('https://cpgreenduck.github.io/bionircsUBCcodes/parallax.css');*/
 
-	-webkit-transition:all 1s ease-out;
-}
-
-a{
-	color:#002145;
-	cursor:pointer;
-	}
-.research-item h4{
-  margin-top:0;
-  padding-top:0;
-}
-
+/* Frontpage-item styles*/
 .frontpage-item{
 	font-size:1em;
 	font-family:sans-serif;
 	width:100%;
-	padding:20px;
-	min-height:100px;
+	/*padding:20px;*/
+	padding:0;
 	min-width:600px;
 	/*background-color:	#c2e3fc;*/
 	background-color:#fff;
 	/*margin-top:10px;*/
  	/*clear:both;*/
 	height:auto;
-  overflow:hidden;
-  text-align:left;
-  float:left;
-  position:relative;
-  	
-        
+   overflow:hidden;
+	text-align:left;
+	float:left;
+	position:relative;
+   
 }
-.frontpage-item>h1, .frontpage-item>h2{
+.frontpage-item.heading{
+	min-height:30px;
+	height:70px;
+	padding:0 !important;
+	margin:0 !important;
+	-webkit-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	transition:all 0.5s ease-out;
+	background-color:transparent;
+	min-width:300px;
+}
+.frontpage-item.heading:hover{
+	-webkit-transform:scale(1.1);
+	    -ms-transform:scale(1.1);
+	        transform:scale(1.1);
+	-webkit-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+.frontpage-item.desc{
+	padding:10px;
+	min-height:50px;
+}
+.frontpage-item>h1, .frontpage-item>h2, .frontpage-item>h3{
   text-align:center;
-  font-size:1.2em;
   padding:0;
-  margin:0;
+  margin:20px;
+  font-weight:bolder;
+  opacity:0.6;
 }
-.static_par_0ht{
-	height:0px !important;
-	width:100%;
-	padding:0;
-	margin:0;
+.frontpage-item>h1{
+	color:#000;
+	font-size:40px;
+}
+.frontpage-item>h2{
+	font-size:32px;
+}
+.frontpage-item>h3{
+	color:#000;
+	font-weight:normal;
 }
 
-
-#research-item-cont.centerdiv  {
-	.aos-init;
-	.aos-animate;
-	animation: slide 1s ease;
-	margin:auto;
-	width:80%;
-	positive:relative;
-	overflow:hidden;
-	align-items:center;
-	text-align:center;
-	justify-content:center;
-	display:flex;
-	flex-wrap:wrap;
-}
+/*Research item styles*/
 .research-item{
 	.aos-init;
 	.aos-animate;
-	width:120px;
-	max-height:120px;
+	width:100px;
+	max-height:150px;
 	/*height:120px;*/
-	margin-left:10px;
-	margin-top:20px;
-	margin-bottom:20px;
-	margin-right:10px;
+	margin:10px;
 	text-align:center;
 	float:left;
-
-	-webkit-transition:all 1s ease;
-	padding:10px;
-	z-index:5;
-}
-.research-item:hover{
-	transform:scale(1.1);
-	-webkit-transition: all 1s ease;
-		z-index:100;
+	-webkit-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	transition:all 0.5s ease-out;
+	padding:0;
+	z-index:100;
 }
 
+.research-item.aos-init.aos-animate:hover{
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+	-webkit-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+	z-index:100;
+}
 .research-item img{
 	width:70px;
 	height:70px;
 }
+.research-item h4{
+  margin-top:0;
+  padding-top:0;
+  color:#000;
+  opacity:0.6;
+}
 
-#about{
-	.aos-init;
-	.aos-animate;
-	top:130px;
-	z-index:4;
+
+
+/*Map styles*/
+
+.map-div-overlay-full{
+	position:absolute;
 	width:100%;
-	border-style:solid;
-	border-width:2px;
-	background-color:#c2e3fc;
-	border-radius:10px;
-	border-color:#185685;
+	height:100%;
+	opacity:1;
+}
+
+.map-div-overlay{
+	position:relative;
+	width:30%;
+	height:90%;
+	float:left;
+	-webkit-transition:opacity 1s ease-out;
+	-o-transition:opacity 1s ease-out;
+	transition:opacity 1s ease-out;
+	z-index:200;
+	display:block;
+}
+.map-div-overlay:hover{
+	-webkit-transition:opacity 1s ease-in;
+	-o-transition:opacity 1s ease-in;
+	transition:opacity 1s ease-in;
+}
+.map-div-overlay-fadein{
+	opacity:0;
+	position:absolute;
+	background-color:rgba(255,255,255,0.8);
+	width:100%;
+	height:90%;
+	-webkit-transition:opacity 1s ease-out;
+	-o-transition:opacity 1s ease-out;
+	transition:opacity 1s ease-out;
 	padding:20px;
-	padding-top:0px;
-	padding-bottom:0px;
-	opacity:0.9;
-	font-size:1.1em;
+	border-radius:10px;
+	overflow:hidden;
+}
+.map-div-overlay-fadein>img{
+	max-width:70%;
+	max-height:18%;
+	clear:both;
+	margin: 20px auto auto auto;
+}
+.map-div-overlay-fadein>a img{
+	max-width:70%;
+	max-height:18%;
+	clear:both;
+	margin: 20px auto auto auto;
 }
 
-#accomplish{
+.map-div-overlay:hover > .map-div-overlay-fadein{
+	opacity:1;
+	-webkit-transition:opacity 1s ease-in;
+	-o-transition:opacity 1s ease-in;
+	transition:opacity 1s ease-in;
+}
+.map-label{
+	position:absolute;
+	top:200px;
 	text-align:center;
-	justify-content:center;
-	display:flex;
-	flex-wrap:wrap;
+	opacity:0.6;
+	width:100%
 }
-
-#accomplish .research-item{
-	width:300px;
-	margin:20px;
+.map-label>h1{
+	color:#000;
+	font-size:40px;
 }
-
-#accomplish .research-item:hover{
-	transform:scale(1.1);
-	-webkit-transition: all 1s ease;
-}
-/* In Accomplish*/
-#citations{
-	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg");
-}
-#funding{
-	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg");
-}
-#partnersr{
-	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg");
-}
-	
-#research-topics{
-top:-300px;
-background-color:rgba(255,255,255,0.7);
-}
-
-#partners{
-	opacity:0.8;
-	top:90px;
-	transition: all 1s ease-out;
-	z-index:1;
-}
-#partners:hover{
-	background-color:#000;
-	transition: all 1s ease-in;
-}
-
-#news, #members{
-  margin:0;
-  min-width:10px;
- /* max-height:700px;*/
-  overflow:hidden;
-  background-color:#fff;
-}
-#news{
-	width: calc(66% - 40px);
-}
-#members{
-	width: calc(34% - 40px);
-}
-#news .postContainer{
-	.aos-init;
-	.aos-animate;
-	max-height:200px;
-}
-
-

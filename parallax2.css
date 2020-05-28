@@ -1,0 +1,90 @@
+/* Tiny reset thingy */
+body,html{margin:0;padding:0;}
+html{}
+body{overflow-x:hidden;}
+
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+ /* height: 100vh;*/
+ /*height:1000px;*/
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  overflow-y:auto;
+  /* Enable scrolling on the page. */
+  /*overflow-y: auto;*/
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  /*perspective: 2px;*/
+}
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+ /*position: relative;*/
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  /*height: 50vh;*/
+  /*height:30vh;*/
+  height:300px;
+  
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* The styling for the static div. */
+.static {
+	height:auto;
+	background-color:rgba(0,0,0,0);
+	z-index:2;
+}
+.static_par_0ht{
+	height:0;
+	width:100%;
+	padding:0;
+	margin:0;
+	display:block;
+	z-index:2;
+}
+
+.parallax {
+	position:relative;
+  /* Display and position the pseudo-element */
+  content: " ";
+  /*position: absolute;*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  /*transform: translateZ(-1px) scale(1.5);*/
+  background-attachment:fixed;
+  /* Force the background image to fill the whole element. */
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  z-index:0;
+  /* Keep the image from overlapping sibling elements. */ 
+ /*transform: translateZ(0px);*/
+  /*will-change:transform;*/
+}
+
+
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+
+.bg1 {
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
+  height:1000px;
+}
+
+.bg2{
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
+	height:800px;
+}
+
+.bg3{
+	background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
+	height:1000px;
+}
