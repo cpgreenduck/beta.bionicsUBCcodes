@@ -8,7 +8,8 @@
 /*@import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');*/
 
 .logo{
-	top:150px;
+	position:relative;
+	z-index:1;
 	overflow:hidden;
 	margin-left:auto;
 	margin-right:auto;
@@ -34,7 +35,7 @@
 	top:50px;
 	float:none;
 	display:block;
-	z-index:4;
+	z-index:1;
 	opacity:0.9;
 }
 #about h4{
@@ -86,7 +87,7 @@
 #research{
 	margin-top:-800px;
 	opacity:1;
-	background-color:rgba(255,255,255,0.8);
+	background-color:rgba(0,0,0,0);
 	max-height:650px;
 }
 .hilite{
@@ -112,8 +113,9 @@
 	-webkit-transition:all 1s ease-out;
 	-o-transition:all 1s ease-out;
 	transition:all 1s ease-out;
-	background-size:cover;
-	background-repeat:no-repeat;
+
+	background-size:contain;
+	background-repeat:repeat-x;
 }
 #teamimg .frontpage-item.heading{
 	color:#fff;

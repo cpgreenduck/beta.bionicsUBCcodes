@@ -1,5 +1,9 @@
 /* Tiny reset thingy */
+/* Based on https://codepen.io/AartdenBraber/pen/WpaxZg */
+
 body,html{margin:0;padding:0;}
+html{}
+body{overflow-x:hidden;}
 
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
@@ -12,12 +16,12 @@ body,html{margin:0;padding:0;}
   /* Enable scrolling on the page. */
   /*overflow-y: auto;*/
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
+  /*perspective: 2px;*/
 }
 
 .section {
   /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
+ /*position: relative;*/
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
   /*height: 50vh;*/
   /*height:30vh;*/
@@ -27,53 +31,62 @@ body,html{margin:0;padding:0;}
   display: flex;
   align-items: center;
   justify-content: center;
-
+}
+/* The styling for the static div. */
+.static {
+	height:auto;
+	background-color:rgba(0,0,0,0);
+	z-index:2;
+}
+.static_par_0ht{
+	height:0;
+	width:100%;
+	padding:0;
+	margin:0;
+	display:block;
+	z-index:2;
 }
 
-
-.parallax::after {
+.parallax {
+	position:relative;
   /* Display and position the pseudo-element */
   content: " ";
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  
+  width:100%;
   /* Move the pseudo-element back away from the camera,
    * then scale it back up to fill the viewport.
    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
   /*transform: translateZ(-1px) scale(1.5);*/
   background-attachment:fixed;
   /* Force the background image to fill the whole element. */
-  background-size: 200vh;
+  background-size: cover;
   background-repeat:no-repeat;
   background-position: center;
+  z-index:0;
   /* Keep the image from overlapping sibling elements. */ 
-  z-index: -1;
+ /*transform: translateZ(0px);*/
+  /*will-change:transform;*/
 }
 
-/* The styling for the static div. */
-.static {
-	height:auto;
-	background-color:rgba(0,0,0,0);
-}
+
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
 
-.bg1::after {
+.bg1 {
   background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
+  height:1000px;
 }
 
-.parallax .bg2{
-	height:700px;
-}
-.bg2::after {
-
+.bg2{
   background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
+	height:800px;
 }
 
-.bg3::after{
-	background-image:url('http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg');
-	}
+.bg3{
+	background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
+	height:1000px;
 }

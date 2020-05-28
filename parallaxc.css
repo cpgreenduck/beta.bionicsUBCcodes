@@ -1,4 +1,5 @@
 /* Tiny reset thingy */
+/*try position fixed*/
 body,html{margin:0;padding:0;}
 
 .wrapper {
@@ -34,7 +35,7 @@ body,html{margin:0;padding:0;}
 .parallax::after {
   /* Display and position the pseudo-element */
   content: " ";
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;

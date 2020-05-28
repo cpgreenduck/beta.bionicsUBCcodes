@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-/*@import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');*/
+/*@import url('https://cpgreenduck.github.io/bionircsUBCcodes/parallax.css');*/
 
 /* Frontpage-item styles*/
 .frontpage-item{
@@ -23,7 +23,8 @@
    overflow:hidden;
 	text-align:left;
 	float:left;
-	position:relative;       
+	position:relative;
+   
 }
 .frontpage-item.heading{
 	min-height:30px;

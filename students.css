@@ -1,0 +1,52 @@
+.postContainer{
+	width:80%;
+	margin:10px;
+	padding:10px;
+	display:block;
+	height:130px;
+	float:left;
+	border-radius:10px;
+	border:2px solid #c0c2c0;
+}
+
+.postThumbnail{
+	width:150px;
+	padding:0px;
+	height:100px;
+	margin:5px;
+	display:block;
+	float:left;
+	overflow:hidden;
+}
+
+.postContainer h3{
+	padding-top:0;
+	margin-top:0;
+}
+
+.postCatHeadline{
+	cursor:pointer;
+	height:30px;
+	width:100%;
+	position:relative;
+}
+
+
+.postCatContainer{
+	position:relative;
+	font-family:sans-serif;
+	overflow:hidden;
+	display:block;
+	max-height:1px;
+	opacity:0;
+	transition: all 0.5s ease-out;
+	/*transform: translateX(-300px) translateY(-60px) scale(0.01);*/
+}
+
+.postCatContainer.expanded{
+	max-height:1000px;
+	opacity:1;
+
+	transition: all 1s ease-in 0.5s;
+	/*transform: translateX(0) translateY(0) scale(1);*/
+}
