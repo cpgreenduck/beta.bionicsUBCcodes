@@ -3,20 +3,22 @@
 
 body,html{margin:0;padding:0;}
 html{
-	height:100%;
-	overflow-x:initial;
-	overflow-y:hidden;
+	height:auto;
+
 }
 body{
-	perspective: 1px;
-	transform-style:preserve-3d;
 	height:100%;
-	overflow-y:visible;
-	overflow-x:hidden;
 }
 
 .wrapper {
-	overflow:visible;
+	perspective: 1px;
+	height:100vh;
+	overflow-x:hidden;
+	overflow-y:auto;
+	/*overflow-y:auto;
+	overflow-x:hidden;*/
+
+	/*height:100%;
   /* The height needs to be set to a fixed value for the effect to work.
    * 100vh is the full height of the viewport. */
  /* height: 100vh;*/
@@ -38,29 +40,50 @@ body{
   /*height:30vh;*/
   height:300px;
   min-height:300px;
-  width:100vw;
+  width:100%;
   /*box-sizing:border-box;
   transform-style:inherit;
   /* For text formatting. */
   /*display: flex;*/
   /*align-items: center;
   justify-content: center;*/
+  transform-style:inherit;
+  
 }
 .parallax{
-	overflow:hidden;
-	z-index:0;
+	/*z-index:0;
+	transform-style:inherit;*/
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
 }
-.parallax:before {
+.parallax_group{
+	position:relative;
+	height:100vh;
+	transform-style:preserve-3d;
+}
+.parallax_base{
+	transform:translateZ(0);
+}
+.parallax_back{
+	transform:translateZ(-1px) scale(2);
+}
+/*.parallax::before {
 	content: "";
 	position:absolute;
+	height:100%;
 	top:0;
 	bottom:0;
 	left:0;
 	right:0;
 	z-index:0;
 	background-size:cover;
-	background-position:center;
-}
+	background-position:top;
+	overflow:visible;
+	transform:translate3d(0,0,0);
+}*/
 /*
 .parallax::after {
   /* Display and position the pseudo-element 
@@ -102,6 +125,7 @@ body{
 
 .bg1 {
 height:1000px;
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
 }
 /*.parallax.bg1::after{
   background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
@@ -109,6 +133,7 @@ height:1000px;
 }*/
 
 .bg2 {
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
 	height:800px;
 }
 /*.bg2::after {
@@ -121,15 +146,15 @@ height:1000px;
 background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
 }*/
 
-.bg1:before{
+.bg1::before{
   background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
-  transform:translateZ(-2px) scale(3);
+  transform:translatez(-1px) scale(2);
 }
-.bg2:before{
+.bg2::before{
   background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
-  transform:translateZ(-2px) scale(3);
+  transform:translatez(-2px) scale(3);
   }
-.bg3:before{
+.bg3::before{
     background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
-      transform:translateZ(-2px) scale(3);
+      transform:translatez(-2px) scale(3);
   }
