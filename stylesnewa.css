@@ -197,6 +197,7 @@
 }
 
 .container1 .cont2 {
+cursor:pointer;
 	height:400px;
 	width:225px;
 	position:relative;
