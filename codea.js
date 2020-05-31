@@ -363,6 +363,7 @@ function dragElement(elmnt){
   }
 
   function elementDrag(e) {
+  alert('inside element drag');
   	 elmnt.classList.add('notransition');
   	 console.log('calling element drag');
     e = e || window.event;
