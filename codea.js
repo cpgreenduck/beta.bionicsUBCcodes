@@ -357,7 +357,7 @@ dragElement(manCont);
 function dragElement(elmnt){
 	var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 	elmnt.addEventListener("mousedown",dragMouseDown);
-	elmnt.addEventListener("touchstart",dragMouseDown);
+	//elmnt.addEventListener("touchstart",dragMouseDown);
 	
 	//elmnt.onmousedown = dragMouseDown;
 	function dragMouseDown(e) {
@@ -371,8 +371,8 @@ function dragElement(elmnt){
     console.log(pos4);
     document.addEventListener("mouseup",closeDragElement);
     document.addEventListener("mousemove",elementDrag);
-    document.addEventListener("touchend",closeDragElement);
-    document.addEventListener("touchmove",elementDrag);
+    //document.addEventListener("touchend",closeDragElement);
+    //document.addEventListener("touchmove",elementDrag);
     //alert('inside dragMouseDown');
     //document.onmouseup = closeDragElement;
     // call a function whenever the cursor moves:
@@ -408,8 +408,8 @@ function dragElement(elmnt){
     //document.onmousemove = null;
     document.removeEventListener("mouseup",closeDragElement);
     document.removeEventListener("mousemove",elementDrag);
-    document.removeEventListener("touchend",closeDragElement);
-    document.removeEventListener("touchmove",elementDrag);
+    //document.removeEventListener("touchend",closeDragElement);
+    //document.removeEventListener("touchmove",elementDrag);
     
     elmnt.classList.remove('notransition');
   }
