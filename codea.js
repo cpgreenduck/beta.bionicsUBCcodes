@@ -35,7 +35,8 @@ var panStep=10;
 var container1=document.querySelector(".container1");
 var clickHover=document.querySelector("#clickHover");
 
-	
+	var xPanLim=container1.offsetWidth/2;
+	var yPanLim=container1.offsetWidth/2;
 
 
 class activator{
@@ -343,8 +344,11 @@ function dragElement(elmnt){
 	var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 	elmnt.addEventListener("mousedown",dragMouseDown);
 	elmnt.addEventListener("touchstart",dragMouseDown);
+	
 	//elmnt.onmousedown = dragMouseDown;
 	function dragMouseDown(e) {
+	xPanLim=container1.offsetWidth/2;
+	yPanLim=container1.offsetWidth/2;
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:
@@ -363,7 +367,8 @@ function dragElement(elmnt){
   }
 
   function elementDrag(e) {
-  alert('inside element drag');
+  //alert('inside element drag'); 
+  
   	 elmnt.classList.add('notransition');
   	 console.log('calling element drag');
     e = e || window.event;
@@ -379,8 +384,9 @@ function dragElement(elmnt){
     // set the element's new position:
     //elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
     //elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-
-    elmnt.style.webkitTransform="translateX(" + (transMat[0] - pos1) + "px) translateY(" + (transMat[1] - pos2) + "px)";
+	 if( (Math.abs(transMat[0]-pos1)<xPanLim) && (Math.abs(transMat[1]-pos2)<yPanLim) ){
+	   elmnt.style.webkitTransform="translateX(" + (transMat[0] - pos1) + "px) translateY(" + (transMat[1] - pos2) + "px)";
+	   }
   }
 
   function closeDragElement() {

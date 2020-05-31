@@ -1,0 +1,203 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*@import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');*/
+
+.logo{
+	position:relative;
+	z-index:1;
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0;
+	width:50%;
+	text-align:center;
+	justify-contents:center;
+	height:100px;
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/bionics.png");
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#about{
+	aos_init;
+	aos_animate;
+	width:100%;
+	clear:both;
+	border-radius:0px;
+	background-color:rgba(31,31,79,0.8);
+	font-color:white;
+	border-width:0px;
+	top:50px;
+	float:none;
+	display:block;
+	z-index:1;
+	opacity:0.9;
+}
+#about h4{
+	font-size:25px;
+	color:#fff;
+	margin:20px;
+}
+
+/*Changes to man.css*/
+.container1{
+	width:80%;
+}
+/* End changes to man stylesnew.css*/
+
+/*Styles Research/Accomplish */
+#accomplish{
+	text-align:center;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap:wrap;
+	    flex-wrap:wrap;
+}
+
+#research-item-cont{
+	clear:both;
+	position:relative;
+	width:90%;
+	margin:auto 0 auto 0;
+	overflow:hidden;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
+	text-align:center;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+/*News and Research highlights*/
+#research{
+	margin-top:-800px;
+	opacity:1;
+	background-color:rgba(0,0,0,0);
+	max-height:650px;
+}
+.hilite{
+	width:45%;
+	margin:20px;
+	float:left;
+	text-align:center;
+	min-width:400px;
+}
+.hilite .postContainer{
+	background-color:#fff;
+	min-height:80px;
+	width:90%;
+	text-align:left;
+	max-height:120px;
+	min-width:400px;
+}
+
+/*Team Styles*/
+#teamimg{
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/membersbg.png");
+	max-height:120px;
+	-webkit-transition:all 1s ease-out;
+	-o-transition:all 1s ease-out;
+	transition:all 1s ease-out;
+
+	background-size:contain;
+	background-repeat:repeat-x;
+}
+#teamimg .frontpage-item.heading{
+	color:#fff;
+	background-color:transparent;
+}
+#teamimg .frontpage-item.heading>h2{
+	color:#fff;
+}
+#teamimg:hover{
+	opacity:0.8;
+	-webkit-transform:scale(1.1);
+	    -ms-transform:scale(1.1);
+	        transform:scale(1.1);
+	-webkit-transition:all 1s ease-in;
+	-o-transition:all 1s ease-in;
+	transition:all 1s ease-in;
+}
+
+/*Partners Styles*/
+#partnersmapCont{
+	min-height:500px;
+	background-size:800px;
+	margin-top:-850px;
+	background-color:transparent;
+	z-index:5;
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/mapdraft1.png");
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+
+#partnerslabel, #workwithus{
+	background-color:rgba(31,31,79,0.8);
+	margin-top:-1000px;
+	width:100%;
+}
+#workwithus{
+	margin-top:-300px;
+}
+#workwithus .frontpage-item .heading h1{
+	color:#fff !important;
+	width:50%;
+	
+}
+#partnerslabel .frontpage-item.heading>h1{
+	color:#fff;
+	}
+	
+#workwithus .frontpage-item.heading{
+	max-width:60%;
+	float:left;
+	text-align:center;
+	height:150px;
+	display:inline-block;
+	min-width:490px;
+}
+#workwithus .frontpage-item.heading:hover{
+	max-width:70%;
+	float:left;
+	text-align:center;
+	height:150px;
+	display:inline-block;
+	-webkit-transform:scale(1.1) translateX(30px);
+	    -ms-transform:scale(1.1) translateX(30px);
+	        transform:scale(1.1) translateX(30px);
+}
+#workwithus .frontpage-item.heading>a h1{
+	color:#fff !important;
+	opacity:0.8;
+	font-size:45px;
+	width:auto;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	margin-left:20%;
+}
+
+#workwithus .frontpage-item.heading>a img{
+	float:left;
+	display:inline-block;
+	margin-top:30px;
+	margin-left:20px;
+	width:50px;
+	animate: slide 1s ease;
+}
