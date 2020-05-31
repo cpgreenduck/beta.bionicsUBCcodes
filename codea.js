@@ -17,7 +17,6 @@ var containMan=document.querySelector("#containMan");
 
 /* variables for page*/
 var rot=false;
-var zoomed=false;
 var transforming=false;
 var transTimeout=600;
 var activated=false;
@@ -67,7 +66,6 @@ class activator{
 		manZoom.style.webkitTransform="scale(2)";
 		manCont.style.webkitTransform="translateX(" + xdisp.toString() + "px) translateY(" + ydisp.toString() + "px)";
 		zoomAmt=2;
-		zoomed=true;
 		//manCont.style.webkitTransform="translateX(-50px) translateY(70px) scale(2)";
 		//console.log(manCont.style.webkitTransform);
 	}
@@ -164,19 +162,13 @@ function zoomInToggle(){
 
 function zoomOutToggle(){
 	if(!transforming){
-		if(zoomed && zoomAmt>zoomMin){
+		if(zoomAmt>zoomMin){
 			//zoomed=false;
 			//manCont.classList.remove("zoomedIn");
 			zoomAmt=zoomAmt-transStep;
 			manZoom.style.webkitTransform="scale(" + zoomAmt.toString() + ")";
-
 			//console.log(zoomed);
-		}
-		else if(zoomAmt==zoomMin){
-			zoomed=false;
-			manZoom.classList.remove("zoomedIn");
-		}
-		
+		}	
 	}
 }
 
@@ -185,49 +177,25 @@ function panToggle(dir){
 		transforming=true;
 		console.log(dir);
 		//console.log("in pantoggle");
-		if(zoomed){
-			zoomAmt=2;
-			console.log("dir in panToggle function:");
-			switch(dir){
-				case 0:
-					manCont.style.webkitTransform="translateY(200px)";
-					break;
-				case 1: 
-					manCont.style.webkitTransform="translateX(100px)";
-					break;
-				case 2: 
-					manCont.style.webkitTransform="translateY(-200px)";
-					break;
-				case 3: 
-					manCont.style.webkitTransform="translateX(-100px)";
-					break;
-			}
-			//console.log(manCont.style.webkitTransform);
-			zoomed=true;
-			setTimeout(function(){transforming=false;},transTimeout);
+		transMat=getTransform(manCont);
+		let dPan=100;
+		switch(dir){
+			case 0:
+				manCont.style.webkitTransform="translateX(" + transMat[0] + "px) translateY(" + (transMat[1]-dPan) + "px)";
+				break;
+			case 1: 
+				manCont.style.webkitTransform="translateX(" + (transMat[0]-dPan) + "px) translateY(" + transMat[1] + "px)";
+				break;
+			case 2: 
+				manCont.style.webkitTransform="translateX(" + transMat[0] + "px) translateY(" + (transMat[1]+dPan) + "px)";
+				break;
+			case 3: 
+				manCont.style.webkitTransform="translateX(" + (transMat[0]+dPan) + "px) translateY(" + transMat[1] + "px)";
+				break;
 		}
-		else{
-			console.log("dir in panToggle function unzoomed:");
-			zoomAmt=1;
-			switch(dir){
-				case 0:
-					manCont.style.webkitTransform="translateY(20px)";
-					break;
-				case 1: 
-					manCont.style.webkitTransform="translateX(10px)";
-					break;
-				case 2: 
-					manCont.style.webkitTransform="translateY(-20px)";
-					break;
-				case 3: 
-					manCont.style.webkitTransform="translateX(-10px)";
-					break;
-			}
-			//console.log(manCont.style.webkitTransform);
-			setTimeout(function(){transforming=false;},transTimeout);
-			//manCont.style.webkitTransform="translateX(0px) translateY(0px) scale (1)";
-
-		}
+		//console.log(manCont.style.webkitTransform);
+		setTimeout(function(){transforming=false;},transTimeout);
+		//manCont.style.webkitTransform="translateX(0px) translateY(0px) scale (1)";
 	}
 }
 /*var stepnum=0;

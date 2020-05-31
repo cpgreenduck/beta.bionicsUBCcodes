@@ -179,7 +179,7 @@
 	margin:70px;
 	margin-left:auto;
 	margin-right:auto;
-	top:80px;
+	top:30px;
 	height:540px;
 	height:100%;
 	text-align: center;
@@ -492,8 +492,8 @@ left:40%;
 	z-index:10;
 	opacity:0.8;
 	bottom:-80px;
-	width:250px;
-	height:30px;
+	width:350px;
+	height:80px;
 	text-align:center;
 	position:relative;
 	margin-left:auto;
@@ -506,8 +506,8 @@ left:40%;
 	position:relative;
 	float:left;
 	left:10px;
-	width:20px;
-	height:20px;
+	width:40px;
+	height:40px;
 	text-align:center;
 	margin:auto 12px auto 12px ;
 	background-repeat:no-repeat;
@@ -548,8 +548,9 @@ left:40%;
 .cont1 .controlView .panholder{
 	position:relative;
 	margin:0px 20px 0px 20px;
-	width:20px;
-	height:20px;
+	width:60px;
+	height:60px;
+	top:-30px;
 	float:left;
 	bottom:10px;
 }
@@ -557,8 +558,8 @@ left:40%;
 	margin:0px 0px 0px 0px !important;
 	padding:0px 0px 0px 0px;
 	position:absolute !important;
-	width:10px !important;
-	height:10px !important;
+	width:30px !important;
+	height:30px !important;
 	display: block;
 	overflow:hidden;
 	float:none;
@@ -566,22 +567,22 @@ left:40%;
 #panupSelect{	
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panup.png");
 	top:0px;
-	left:15px;
+	left:30px;
 }
 #panleftSelect{	
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panleft.png");
 	left:0px;
-	top:15px;
+	top:30px;
 }
 #pandownSelect{	
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/pandown.png");	
-	top:30px;
-	left:15px;
+	top:60px;
+	left:30px;
 }
 #panrightSelect{	
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panright.png");
-	left:30px;
-	top:15px;
+	left:60px;
+	top:30px;
 }
 #panupSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panuph.png");}
 #panleftSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panlefth.png");}
