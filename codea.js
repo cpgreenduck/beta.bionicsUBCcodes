@@ -35,8 +35,8 @@ var panStep=10;
 var container1=document.querySelector(".container1");
 var clickHover=document.querySelector("#clickHover");
 
-	var xPanLim=container1.offsetWidth/2;
-	var yPanLim=container1.offsetWidth/2;
+var xPanLim=container1.offsetWidth/2;
+var yPanLim=container1.offsetWidth/2;
 
 
 class activator{
@@ -180,20 +180,32 @@ function panToggle(dir){
 		//console.log("in pantoggle");
 		transMat=getTransform(manCont);
 		let dPan=100;
+		xPanLim=container1.offsetWidth/2;
+	   yPanLim=container1.offsetWidth/2;
+
 		switch(dir){
 			case 0:
-				manCont.style.webkitTransform="translateX(" + transMat[0] + "px) translateY(" + (transMat[1]-dPan) + "px)";
+				if(Math.abs(transMat[1]-dPan)<yPanLim){
+					manCont.style.webkitTransform="translateX(" + transMat[0] + "px) translateY(" + (transMat[1]-dPan) + "px)";
+				}
 				break;
 			case 1: 
-				manCont.style.webkitTransform="translateX(" + (transMat[0]-dPan) + "px) translateY(" + transMat[1] + "px)";
+				if(Math.abs(transMat[0]-dPan)<xPanLim){
+					manCont.style.webkitTransform="translateX(" + (transMat[0]-dPan) + "px) translateY(" + transMat[1] + "px)";
+				}
 				break;
 			case 2: 
-				manCont.style.webkitTransform="translateX(" + transMat[0] + "px) translateY(" + (transMat[1]+dPan) + "px)";
+				if(Math.abs(transMat[1]+dPan)<yPanLim){
+					manCont.style.webkitTransform="translateX(" + transMat[0] + "px) translateY(" + (transMat[1]+dPan) + "px)";
+				}
 				break;
 			case 3: 
-				manCont.style.webkitTransform="translateX(" + (transMat[0]+dPan) + "px) translateY(" + transMat[1] + "px)";
+				if(Math.abs(transMat[0]+dPan)<xPanLim){
+					manCont.style.webkitTransform="translateX(" + (transMat[0]+dPan) + "px) translateY(" + transMat[1] + "px)";
+				}
 				break;
 		}
+		
 		//console.log(manCont.style.webkitTransform);
 		setTimeout(function(){transforming=false;},transTimeout);
 		//manCont.style.webkitTransform="translateX(0px) translateY(0px) scale (1)";
