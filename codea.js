@@ -384,9 +384,13 @@ function dragElement(elmnt){
     pos4 = e.clientY;
     console.log(pos3);
     console.log(pos4);
-    document.onmouseup = closeDragElement;
+    document.addEventListener("mouseup",closeDragElement);
+    document.addEventListener("mousemove",elementDrag);
+    document.addEventListener("touchend",closeDragElement);
+    document.addEventListener("touchmove",elementDrag);
+    //document.onmouseup = closeDragElement;
     // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
+    //document.onmousemove = elementDrag;
   }
 
   function elementDrag(e) {
@@ -411,8 +415,13 @@ function dragElement(elmnt){
 
   function closeDragElement() {
     // stop moving when mouse button is released:
-    document.onmouseup = null;
-    document.onmousemove = null;
+   // document.onmouseup = null;
+    //document.onmousemove = null;
+    document.removeEventListener("mouseup",closeDragElement);
+    document.removeEventListener("mousemove",elementDrag);
+    document.removeEventListener("touchend",closeDragElement);
+    document.removeEventListener("touchmove",elementDrag);
+    
     elmnt.classList.remove('notransition');
   }
 }
