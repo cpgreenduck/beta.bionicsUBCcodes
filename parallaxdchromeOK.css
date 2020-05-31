@@ -1,0 +1,136 @@
+/* Tiny reset thingy */
+/*based on https://codepen.io/keithclark/pen/JycFw*/
+/* So far html overflow-y: hidden disables all AOS animations while critical for enabling parallax*/
+/* may 29 fixed this by editing aos library- now it has transforms*/
+
+body,html{margin:0;padding:0;}
+html{
+	height:100%;
+	overflow-y:hidden;
+}
+body{
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height:100%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+.wrapper {
+perspective: 1px;
+	transform-style: preserve-3d;
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+ /* height: 100vh;*/
+ /*height:1000px;*/
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  /*overflow-x: hidden;
+  overflow-y:auto;
+  /* Enable scrolling on the page. */
+  /*overflow-y: auto;*/
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.
+  perspective: 2px;*/
+}
+.frontpage-item{height:500px;overflow:visible;}
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  overflow-y:hidden;
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  /*height: 50vh;*/
+  /*height:30vh;*/
+  height:500px;
+  min-height:300px;
+  width:100%;
+  /*box-sizing:border-box;
+  transform-style:inherit;
+  /* For text formatting. */
+  /*display: flex;*/
+  /*align-items: center;
+  justify-content: center;*/
+  transform-style: preserve-3d;
+}
+.parallax{
+	overflow:hidden;
+	z-index:0;
+	transform-style:preserve-3d;
+}
+.parallax:before {
+	content: "";
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:0;
+	background-size:200vh;
+	background-position:center;
+	width:100%;
+	overflow-y:hidden;
+	transform: perspective(1px) translateZ(-2px) scale(3);
+   transform-style:preserve-3d;
+}
+/*
+.parallax::after {
+  /* Display and position the pseudo-element 
+  content: "";
+  position:absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  /*transform: translateZ(-1px) scale(1.5);
+  background-attachment:fixed;
+  /* Force the background image to fill the whole element. 
+  background-size: 200vh;
+  background-repeat:no-repeat;
+  background-position: center;
+  /* Keep the image from overlapping sibling elements.  
+  z-index: 0;
+ /* background-color:blue;
+}*/
+
+.static {
+	height:auto;
+	background-color:rgba(0,0,0,0);
+}
+.static_par_0ht{
+	height:0;
+	width:100%;
+	padding:0;
+	margin:0;
+	display:block;
+	z-index:1;
+	overflow:visible;
+}
+
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+
+.bg1 {
+height:1000px;
+}
+
+.bg2 {
+	height:800px;
+}
+.bg3 {
+	height:1000px;
+}
+
+.bg1:before{
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
+  transform: perspective(1px) translateZ(-2px) scale(3);
+  transform-style:preserve-3d;
+}
+.bg2:before{
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
+  transform:translateZ(-2px) scale(3);
+  }
+.bg3:before{
+    background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
+      transform:translateZ(-2px) scale(3);
+  }

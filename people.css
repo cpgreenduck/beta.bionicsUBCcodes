@@ -9,7 +9,9 @@
   float:left;
 }
 */
-
+#partnersmapCont{
+  margin-top:0 !important;
+}
 .page-id-1917 .excerpt, .page-id-1921 .excerpt{
   display:none;
 }

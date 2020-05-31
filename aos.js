@@ -78,7 +78,7 @@
                     O(!0)
                 }) : document.addEventListener(j.startEvent, function() {
                     O(!0)
-                }), window.addEventListener("resize", (0, f.default)(O, j.debounceDelay, !0)), window.addEventListener("orientationchange", (0, f.default)(O, j.debounceDelay, !0)), window.addEventListener("mousewheel", (0, u.default)(function() {
+                }), window.addEventListener("resize", (0, f.default)(O, j.debounceDelay, !0)), window.addEventListener("orientationchange", (0, f.default)(O, j.debounceDelay, !0)), window.addEventListener("wheel", (0, u.default)(function() {
                     (0, b.default)(w, j.once)
                 }, j.throttleDelay)), j.disableMutationObserver || (0, d.default)("[data-aos]", _), w)
             };
@@ -423,6 +423,7 @@
                     n(e, i + o, t)
                 })
             };
+            
         t.default = o
     }, function(e, t, n) {
         "use strict";

@@ -3,24 +3,27 @@
 /* So far html overflow-y: hidden disables all AOS animations while critical for enabling parallax*/
 /* may 29 fixed this by editing aos library- now it has transforms*/
 
-body,html{margin:0;padding:0;}
+
 html{
 	height:100%;
-	overflow-x:initial;
-	overflow-y:hidden;
+	overflow:hidden;
 }
 body{
-	perspective: 1px;
-	transform-style:preserve-3d;
+	margin:0;
+	padding:0;
+	perspective: 0.1px;
+	transform-style: preserve-3d;
 	height:100%;
-	overflow-y:initial;
+	overflow-y:scroll;
 	overflow-x:hidden;
+}
+#body-container, .full-width-container, #container, #content, #post-2311, .entry-content, .expand{
+	transform-style: preserve-3d;
 }
 
 .wrapper {
-	overflow-x:initial;
 
-	max-width:1200px;
+	transform-style: preserve-3d;
   /* The height needs to be set to a fixed value for the effect to work.
    * 100vh is the full height of the viewport. */
  /* height: 100vh;*/
@@ -32,14 +35,21 @@ body{
   /*overflow-y: auto;*/
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.
   perspective: 2px;*/
+  backface-visibility:inherit;
 }
+.wrapper_holder{
+
+	transform-style:preserve-3d;
+		perspective: 0.1px;
+	
+	backface-visibility:inherit;
+	}
 .frontpage-item{height:500px;overflow:visible;}
 .section {
-  /* Needed for children to be absolutely positioned relative to the parent. */		overflow-y:hidden;
+  /* Needed for children to be absolutely positioned relative to the parent. */
+ /* overflow:hidden;*/
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  /*height: 50vh;*/
-  /*height:30vh;*/
   height:500px;
   min-height:300px;
   width:100%;
@@ -49,23 +59,32 @@ body{
   /*display: flex;*/
   /*align-items: center;
   justify-content: center;*/
+  transform-style: preserve-3d;
+  backface-visibility:inherit;
 }
 .parallax{
-	overflow:hidden;
-	z-index:0;
+	/*overflow:hidden;
+	z-index:0;*/
+	/*transform-style:preserve-3d;*/
 }
-.parallax:before {
+.parallax:before, .parallax:after {
 	content: "";
 	position:absolute;
 	top:0;
 	bottom:0;
 	left:0;
 	right:0;
-	z-index:0;
-	background-size:200vh;
-	background-position:center;
+	z-index:-10;
+	background-size:100%;
+	background-position:top;
 	width:100%;
-	overflow-y:hidden;
+	transform: perspective(0.1px) translateZ(-0.05px) scale(2.5);
+	transform-style: preserve-3d;
+	transform-origin:bottom;
+	backface-visibility:hidden;
+	/*overflow-y:hidden;
+	transform: perspective(1px) translateZ(-2px) scale(3);
+   transform-style:preserve-3d;*/
 }
 /*
 .parallax::after {
@@ -91,10 +110,12 @@ body{
 }*/
 
 .static {
-	height:auto;
+	/*height:auto;*/
 	background-color:rgba(0,0,0,0);
+	z-index:5;
+	position:absolute;
 }
-.static_par_0ht{
+/*.static_par_0ht{
 	height:0;
 	width:100%;
 	padding:0;
@@ -102,7 +123,7 @@ body{
 	display:block;
 	z-index:1;
 	overflow:visible;
-}
+}*/
 
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
@@ -110,33 +131,20 @@ body{
 .bg1 {
 height:1000px;
 }
-/*.parallax.bg1::after{
-  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
-  
-}*/
 
 .bg2 {
 	height:800px;
 }
-/*.bg2::after {
-  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
-}*/
 .bg3 {
 	height:1000px;
 }
-/*.bg3::after {
-background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
-}*/
 
 .bg1:before{
   background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
-  transform:translateZ(-2px) scale(3);
 }
-.bg2:before{
+.bg2:after{
   background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
-  transform:translateZ(-2px) scale(3);
   }
-.bg3:before{
+.bg3:after{
     background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
-      transform:translateZ(-2px) scale(3);
   }

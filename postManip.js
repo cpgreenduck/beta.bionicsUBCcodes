@@ -11,7 +11,8 @@ class postCatActivator{
 		}
 		this.postCat.classList.add("expanded");
     	this.postCatHeadline.classList.add("active");
-    	AOS.init();
+    	setTimeout(function(){ AOS.refresh();}, 500);
+    	console.log('refreshed Aos');
 	}
 		constructor(step,postCat,postCatHeadline){
 		this.index=step;

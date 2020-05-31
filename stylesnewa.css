@@ -1,0 +1,741 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.container1 {
+   /*position:absolute;*/
+   position:relative;
+   z-index:2;
+	overflow:hidden;
+/*	width: 100%;*/
+	width:99.4%;
+	clear:both;
+	min-width: 300px;
+	margin-top:0;
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+	padding:0;
+	margin-bottom:-20px;
+	border-style:solid;
+	border-radius:10px;
+	border-color:grey;
+	background-color:#fff;
+/*	height:600px;*/
+	height:660px;
+	text-align: center;
+	position: relative;
+	display: block;
+	/*background-color:#fff;*/
+
+	-webkit-transition: all 1s ease;
+
+	-o-transition: all 1s ease;
+
+	transition: all 1s ease;
+}
+.container1 p, .container1 a, .container1 h1, .container1 h2, .container1 h3{
+	/*color:#76b4d6;*/
+	color:#002145;
+	cursor: auto;
+	font-weight:regular;
+	font-family: sans-serif;
+	text-decoration:none;
+	font-size: 14px;
+	text-align:left;
+	margin:5px;
+	padding:5px;
+	display: block;
+}
+.container1 a {	cursor:pointer;}
+.container1 a:hover {	cursor:pointer; -webkit-transform:translateX(15px) scale(1.05); -ms-transform:translateX(15px) scale(1.05); transform:translateX(15px) scale(1.05); -webkit-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease;}
+.container1 h1, .container1 h2, .container1 h3 {	cursor: auto;}
+.container1 h1, .container1 h2{
+	background: -o-linear-gradient(20deg,#3290c7, #bee8eb);
+	background: linear-gradient(70deg,#3290c7, #bee8eb);
+	-webkit-background-clip: text;
+	        background-clip: text;
+  	text-fill-color: transparent;
+	background-clip: text;
+  	text-fill-color: transparent;
+  	/*transition: all 1s ease;*/
+	-webkit-animation: fadein 1s ;
+	        animation: fadein 1s ;
+	text-align:left;
+	position:absolute;
+	z-index:3;
+	-webkit-transition: background 1s ease-out;
+	-o-transition: background 1s ease-out;
+	transition: background 1s ease-out;
+	-webkit-transition: -webkit-transform 1s ease-out;
+	transition: -webkit-transform 1s ease-out;
+	-o-transition: transform 1s ease-out;
+	transition: transform 1s ease-out;
+	transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+.container1 h1:hover, .container1 h2:hover{
+	-webkit-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+	-webkit-transform: translateX(30px) scale(1.02);
+	    -ms-transform: translateX(30px) scale(1.02);
+	        transform: translateX(30px) scale(1.02);
+	-webkit-transition: background 1s ease-in;
+	-o-transition: background 1s ease-in;
+	transition: background 1s ease-in;
+	-webkit-transition: -webkit-transform 1s ease-in;
+	transition: -webkit-transform 1s ease-in;
+	-o-transition: transform 1s ease-in;
+	transition: transform 1s ease-in;
+	transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+}
+.container1 #headline{		left:20px;top:10px;}
+.container1 #subheadline{		left:20px;top:50px;}
+.container1 h1 {	font-size: 2em;}
+.container1 h2 {	font-size: 1.7em;}
+.container1 h3 {	font-size: 1.5em;}
+.container1 h3 a{	font-size:1em;	padding:0px; margin:0px;}
+
+.container1 #clickHover{
+	position:absolute;
+	background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/hoverman.png');
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	height:650px;
+	width:100%;
+	top:0px;
+	left:0px;
+	z-index:10;
+	opacity:1;
+	-webkit-transform:scale(1);
+	    -ms-transform:scale(1);
+	        transform:scale(1);
+	-webkit-transition:all 1s ease-out;
+	-o-transition:all 1s ease-out;
+	transition:all 1s ease-out;
+}
+
+
+.bg-lazy {
+  /*height: 100vh;
+  width: 100vw;*/
+  -webkit-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+
+.bg-loading {
+  opacity: 0;
+  -webkit-transition:opacity 1s ease-in;
+  -o-transition:opacity 1s ease-in;
+  transition:opacity 1s ease-in;
+}
+
+#loading{
+  overflow:hidden;
+  display:block;
+  opacity:1;
+  position:absolute;
+  height:100%;
+  max-height:100%;
+  width:100%;
+  background-color:#fff;
+  z-index:100;
+  -webkit-transition: opacity 1s ease-out, max-height 1s ease-out 1s;
+  -o-transition: opacity 1s ease-out, max-height 1s ease-out 1s;
+  transition: opacity 1s ease-out, max-height 1s ease-out 1s;
+  text-align:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+}
+#loading>h1{
+  margin:auto;
+  -webkit-animation: bounce 1s ease;
+          animation: bounce 1s ease;
+  -webkit-animation-iteration-count:infinite;
+          animation-iteration-count:infinite;
+  font-size:40px;
+  opacity:0.3;
+  top:45%;
+  left:40%;
+}
+#loading.inactive{
+  opacity:0;
+  max-height:0%;
+  -webkit-transition: opacity 1s ease-in, max-height 1s ease-in 1s;
+  -o-transition: opacity 1s ease-in, max-height 1s ease-in 1s;
+  transition: opacity 1s ease-in, max-height 1s ease-in 1s;
+}
+
+.container1 .cont1{
+	overflow:visible;
+	position:absolute;
+	width:100%;
+	margin:70px;
+	margin-left:auto;
+	margin-right:auto;
+	top:80px;
+	height:540px;
+	height:100%;
+	text-align: center;
+	z-index:2;	
+	-webkit-transform:scale(1);	
+	    -ms-transform:scale(1);	
+	        transform:scale(1);
+	-webkit-animation: fadein 3s ;
+	        animation: fadein 3s ;
+	-webkit-transition: -webkit-transform 1s ease-out;
+	transition: -webkit-transform 1s ease-out;
+	-o-transition: transform 1s ease-out;
+	transition: transform 1s ease-out;
+	transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+
+.container1 .cont2 {
+	height:400px;
+	width:225px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:visible;
+	position:relative;
+	z-index:1;
+/*	-webkit-transform:scale(1.5);
+	    -ms-transform:scale(1.5);
+	        transform:scale(1.5);*/
+	-webkit-transition:-webkit-transform 0.5s ease-out;
+	transition:-webkit-transform 0.5s ease-out;
+	-o-transition:transform 0.5s ease-out;
+	transition:transform 0.5s ease-out;
+	transition:transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+.container1 .cont2:hover{
+	-webkit-transform:scale(1.1);
+	    -ms-transform:scale(1.1);
+	        transform:scale(1.1);
+	-webkit-transition: -webkit-transform 1s ease-in;
+	transition: -webkit-transform 1s ease-in;
+	-o-transition: transform 1s ease-in;
+	transition: transform 1s ease-in;
+	transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+}
+.manZoom{
+	height:400px;
+	width:225px;
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+	position:absolute;
+	z-index:1;
+   -webkit-transform:scale(1.5);
+	    -ms-transform:scale(1.5);
+	        transform:scale(1.5);
+   -webkit-transition:-webkit-transform 0.5s ease-out;
+	transition:-webkit-transform 0.5s ease-out;
+	-o-transition:transform 0.5s ease-out;
+	transition:transform 0.5s ease-out;
+	transition:transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.container1 #man-pic {
+	height:400px;
+	width:5625px;
+	position:absolute;
+	/*display: inline-block;*/
+	/*background-image: url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/outputL.png");*/
+	background-size:100%;
+	background-position:left;
+	/*padding:0.1em;*/
+	background-repeat: no-repeat;
+	/*-webkit-transition:-webkit-transform 0.5s steps(24);
+	transition:-webkit-transform 0.5s steps(24);
+	-o-transition:transform 0.5s steps(24);
+	transition:transform 0.5s steps(24);*/
+	/*transition: background-position 0.1s step-end, transform 0.5s steps(24);*/
+	-webkit-animation: manunrot 0.5s steps(24);
+	        animation: manunrot 0.5s steps(24);
+	-webkit-transform:translateX(0px);
+	    -ms-transform:translateX(0px);
+	        transform:translateX(0px);
+}
+.notransition{
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+.container1 #man-pic.rotated {
+	/*background-position:right;
+	/*-webkit-transform:translateX(-5400px);
+	    -ms-transform:translateX(-5400px);
+	        transform:translateX(-5400px);
+	/*-webkit-transition:-webkit-transform 0.5s steps(24);
+	transition:-webkit-transform 0.5s steps(24);
+	-o-transition:transform 0.5s steps(24);
+	transition:transform 0.5s steps(24);*/
+	/*transition: background-position 0.1s step-end, transform 0.5s steps(24);*/
+	-webkit-animation: manrot 0.5s steps(24);
+	        animation: manrot 0.5s steps(24);
+	-webkit-transform:translateX(-5400px);
+	    -ms-transform:translateX(-5400px);
+	        transform:translateX(-5400px);
+}
+
+.container1 .hotspot{
+	position:absolute;
+	width: 40px;
+	margin: 2px auto 0 auto;
+	height:40px;
+	text-align: center;
+	position: relative;
+	display: block;
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spot1.png");
+	background-size:100%;
+	margin:5px;
+	opacity:1;
+	background-repeat:no-repeat;
+	cursor:pointer;
+ 	-webkit-transition: all 0.5s ease-out;
+ 	-o-transition: all 0.5s ease-out;
+ 	transition: all 0.5s ease-out;
+}
+.container1 .hotspot:hover{
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spothover1.png");
+	opacity:1;
+  -webkit-animation: slide 1s ease;
+          animation: slide 1s ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.container1 .hotspot.active{
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spothover1.png");
+	opacity:1;
+	-webkit-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+
+.container1 .cont1 #hot-hip{
+	top:50%;
+	left:52%;
+}
+.container1 .cont1 #hot-hip.rotated{
+left:40%;
+}
+.container1 .cont1 #hot-spine{
+	top:20%;
+	left:38%;
+}
+.container1 .cont1 #hot-spine.rotated{
+left:40%;
+}
+.container1 .cont1 #hot-hand{
+	top:25%;
+	left:2%;
+	-webkit-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	transition:all 0.5s ease-out;
+}
+.container1 .cont1 #hot-hand.rotated{
+	left:40%;
+	-webkit-transition:all 0.5s ease-in;
+	-o-transition:all 0.5s ease-in;
+	transition:all 0.5s ease-in;
+}
+
+.container1 .popup {
+	position:relative;
+	overflow:hidden;
+	clip: rect(0 0 0 0);
+	visibility:visible;
+	min-width:1px;
+	min-height:1px;
+	width: 1px;
+	height:1px;
+	display: block;
+	background: rgba(60, 60, 60, 0.5);
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/popupbgL.png");
+	color:rgba(0,0,0,0);
+	border-radius:10px;
+	z-index:10;
+   margin: 100px 40px 40px auto;
+	opacity:0;
+	padding:0;
+	-webkit-animation: slide 1s ease;
+	        animation: slide 1s ease;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+   top:10px;
+   margin-left:50%;
+   margin-top:40%;
+}
+
+.container1 .popup.active{
+	width:60%;
+
+	min-width:400px;
+	min-height:250px;
+	opacity:0.9;
+	padding:10px;
+   /* margin: 10px 10px 0 auto;*/
+      /* margin: 10px 40px 40px auto;*/
+      /*margin:auto;*/
+      margin-left:5%;
+      margin-top:10%;
+      top:10%;
+/*for test popup LR 
+      left:300px;
+      width:30%*/ 
+   -webkit-animation: slide 1s ease; 
+           animation: slide 1s ease;
+   -webkit-animation-iteration-count: 1;
+           animation-iteration-count: 1;
+   -webkit-transition: all 0.5s ease-in;
+   -o-transition: all 0.5s ease-in;
+   transition: all 0.5s ease-in;
+}
+
+.container1 .popup .exit{
+	font-size:16px;
+	position:absolute;
+	height:30px;
+	width:30px;
+	right:10px;
+	padding: 40px auto auto 40px;
+	cursor:pointer;
+	background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/x.png');
+	background-size:80%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.container1 .popup .exit:hover{
+	-webkit-transform:scale(1.1);
+	    -ms-transform:scale(1.1);
+	        transform:scale(1.1);
+}
+
+.container1 .popup .popup_contents{
+	text-align:left;
+	color:#000;
+	float:left;
+	opacity:0;
+	font-size:0.01px;
+	overflow:hidden;
+	width:1px;
+	height:1px;
+	padding:0;
+	-webkit-transition: opacity 1s ease-in;
+	-o-transition: opacity 1s ease-in;
+	transition: opacity 1s ease-in;
+}
+
+.popup_contents .excerpt-div{
+	/*color: #76b4d6;*/
+	color:#000;
+	min-width:250px;
+	height:200px;
+	float:left;
+	font-size:15px;
+	margin:0 20px 0;
+	padding:0;
+}
+
+
+.popup_contents .thumbnaildiv{
+
+	width:100px;
+	padding:0;
+	margin:10px;
+	display:block;
+	float:left;
+}
+
+.container1 .popup .popup_contents.active{
+	font-size:15px;
+	
+	opacity:1;
+	width:90%;
+	height:auto;
+    padding:0;
+    margin:0;
+	-webkit-transition: opacity 0.5s ease-in 0.5s;
+	-o-transition: opacity 0.5s ease-in 0.5s;
+	transition: opacity 0.5s ease-in 0.5s;
+
+}
+
+.popup_contents>h3{
+	margin-left:20px;
+    float:left;
+}
+
+ .excerpt-div h3{
+    float:right;
+    margin-top:10px;
+}
+
+.cont1 .controlView{
+
+	/*position:absolute;*/
+	z-index:10;
+	opacity:0.8;
+	bottom:-80px;
+	width:250px;
+	height:30px;
+	text-align:center;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+
+	
+}
+
+.controlView .controlSelect{
+	position:relative;
+	float:left;
+	left:10px;
+	width:20px;
+	height:20px;
+	text-align:center;
+	margin:auto 12px auto 12px ;
+	background-repeat:no-repeat;
+	background-size:100%;
+	cursor:pointer;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+.controlSelect:hover{
+	-webkit-transform: scale(1.3);
+	    -ms-transform: scale(1.3);
+	        transform: scale(1.3);
+
+}
+
+
+.cont1 .controlView .controlSelect#rotateSelect{	
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/rot.png");
+}
+.cont1 .controlView .controlSelect#zoomoutSelect{	
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/zoomout.png");
+}
+.cont1 .controlView .controlSelect#zoominSelect{	
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/zoomin.png");
+}
+.cont1 .controlView .controlSelect#rotateSelect:hover{	
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/roth.png");
+}
+.cont1 .controlView .controlSelect#zoomoutSelect:hover{	
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/zoomouth.png");
+}
+.cont1 .controlView .controlSelect#zoominSelect:hover{	
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/zoominh.png");
+}
+
+.cont1 .controlView .panholder{
+	position:relative;
+	margin:0px 20px 0px 20px;
+	width:20px;
+	height:20px;
+	float:left;
+	bottom:10px;
+}
+.panButton{
+	margin:0px 0px 0px 0px !important;
+	padding:0px 0px 0px 0px;
+	position:absolute !important;
+	width:10px !important;
+	height:10px !important;
+	display: block;
+	overflow:hidden;
+	float:none;
+}
+#panupSelect{	
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panup.png");
+	top:0px;
+	left:15px;
+}
+#panleftSelect{	
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panleft.png");
+	left:0px;
+	top:15px;
+}
+#pandownSelect{	
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/pandown.png");	
+	top:30px;
+	left:15px;
+}
+#panrightSelect{	
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panright.png");
+	left:30px;
+	top:15px;
+}
+#panupSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panuph.png");}
+#panleftSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panlefth.png");}
+#pandownSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/pandownh.png");}
+#panrightSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panrighth.png");}
+
+
+
+
+/* Animations*/
+
+@-webkit-keyframes slide
+{
+    20%
+    {
+        -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+    }
+  
+    80%
+    {
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+    }
+
+    100%
+    {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+
+@keyframes slide
+{
+    20%
+    {
+        -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+    }
+  
+    80%
+    {
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+    }
+
+    100%
+    {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes bounce
+{
+	1%
+	{
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	20%
+	{
+		-webkit-transform:translateY(2px);
+		        transform:translateY(2px);
+	}
+	40%
+	{
+		-webkit-transform:translateY(4px);
+		        transform:translateY(4px);
+	}
+	50%
+	{
+		-webkit-transform: translateY(5px);
+		        transform: translateY(5px);
+	}
+	60%
+	{
+		-webkit-transform: translateY(4px);
+		        transform: translateY(4px);
+	}
+	80%
+	{
+		-webkit-transform:translateY(2px);
+		        transform:translateY(2px);
+	}
+	100%
+	{
+		-webkit-transform:translateY(0);
+		        transform:translateY(0);
+	}
+}
+
+@keyframes bounce
+{
+	1%
+	{
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	20%
+	{
+		-webkit-transform:translateY(2px);
+		        transform:translateY(2px);
+	}
+	40%
+	{
+		-webkit-transform:translateY(4px);
+		        transform:translateY(4px);
+	}
+	50%
+	{
+		-webkit-transform: translateY(5px);
+		        transform: translateY(5px);
+	}
+	60%
+	{
+		-webkit-transform: translateY(4px);
+		        transform: translateY(4px);
+	}
+	80%
+	{
+		-webkit-transform:translateY(2px);
+		        transform:translateY(2px);
+	}
+	100%
+	{
+		-webkit-transform:translateY(0);
+		        transform:translateY(0);
+	}
+}
+
+
+@-webkit-keyframes fadein{
+from{ opacity: 0}
+to { opacity: 1}
+}
+
+@keyframes fadein{
+from{ opacity: 0}
+to { opacity: 1}
+}
+@-webkit-keyframes manrot{
+	from{ -webkit-transform:translateX(0); transform:translateX(0)}
+	to{ -webkit-transform: translateX(-5400px); transform: translateX(-5400px)}
+}
+@keyframes manrot{
+	from{ -webkit-transform:translateX(0); transform:translateX(0)}
+	to{ -webkit-transform: translateX(-5400px); transform: translateX(-5400px)}
+}
+@-webkit-keyframes manunrot{
+	from{ -webkit-transform:translateX(-5400px); transform:translateX(-5400px)}
+	to{ -webkit-transform: translateX(0); transform: translateX(0)}
+}
+@keyframes manunrot{
+	from{ -webkit-transform:translateX(-5400px); transform:translateX(-5400px)}
+	to{ -webkit-transform: translateX(0); transform: translateX(0)}
+}
+
