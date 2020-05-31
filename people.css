@@ -12,7 +12,7 @@
 #partnersmapCont{
   margin-top:0 !important;
 }
-.map-div-overlay{
+/*.map-div-overlay{
 opacity:1 !important;
 position:relative !important;
 
@@ -25,6 +25,21 @@ position:static !important;
 }
 .map-label{
 top:0 !important;
+}*/
+.map-label>h1, .map-label.active>h1{
+	font-size:18px;
+}
+.map-label{
+background-color:blue;
+}
+.map-div-overlay{
+	position:static;
+}
+.map-div-overlay-full{
+	top:0;
+}
+.profile_cct{
+	padding:20px;
 }
 .page-id-1917 .excerpt, .page-id-1921 .excerpt{
   display:none;

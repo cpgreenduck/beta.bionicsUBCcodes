@@ -35,8 +35,8 @@ var panStep=10;
 var container1=document.querySelector(".container1");
 var clickHover=document.querySelector("#clickHover");
 
-var xPanLim=container1.offsetWidth/2;
-var yPanLim=container1.offsetWidth/2;
+var xPanLim=[];
+var yPanLim=[];
 
 
 class activator{
@@ -107,8 +107,11 @@ class panner{
 	}
 }
 
-
-
+function getPanLims(){
+		xPanLim=container1.offsetWidth/2-20;
+	   yPanLim=container1.offsetHeight/2-20;
+}
+getPanLims();
 
 
 function popUpToggle(){
@@ -180,9 +183,8 @@ function panToggle(dir){
 		//console.log("in pantoggle");
 		transMat=getTransform(manCont);
 		let dPan=100;
-		xPanLim=container1.offsetWidth/2;
-	   yPanLim=container1.offsetWidth/2;
 
+		getPanLims();
 		switch(dir){
 			case 0:
 				if(Math.abs(transMat[1]-dPan)<yPanLim){
@@ -359,8 +361,7 @@ function dragElement(elmnt){
 	
 	//elmnt.onmousedown = dragMouseDown;
 	function dragMouseDown(e) {
-	xPanLim=container1.offsetWidth/2;
-	yPanLim=container1.offsetWidth/2;
+	getPanLims();
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:

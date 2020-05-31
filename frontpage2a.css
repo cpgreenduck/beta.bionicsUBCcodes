@@ -17,8 +17,8 @@
 	width:50%;
 	text-align:center;
 	justify-contents:center;
-	height:100px;
-	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/bionics.png");
+	height:120px;
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/bionicslogo_dblue.png");
 	background-size:contain;
 	background-repeat:no-repeat;
 	background-position:center;
@@ -90,6 +90,11 @@
 	background-color:rgba(0,0,0,0);
 	max-height:650px;
 }
+#research h2 a{
+ color:white;
+ opacity:1;
+}
+
 .hilite{
 	width:45%;
 	margin:20px;
@@ -107,22 +112,30 @@
 }
 
 /*Team Styles*/
+#team{
+height:300px;
+}
 #teamimg{
-	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/membersbg.png");
-	max-height:120px;
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/membersFrontPage.png");
+	max-height:200px;
 	-webkit-transition:all 1s ease-out;
 	-o-transition:all 1s ease-out;
 	transition:all 1s ease-out;
-
+	height:200px;
 	background-size:contain;
 	background-repeat:repeat-x;
 }
 #teamimg .frontpage-item.heading{
 	color:#fff;
 	background-color:transparent;
+	height:40px;
+
 }
 #teamimg .frontpage-item.heading>h2{
 	color:#fff;
+	vertical-align:middle;
+	margin-top:40px;
+	font-size:40px;
 }
 #teamimg:hover{
 	opacity:0.8;
@@ -141,7 +154,7 @@
 	margin-top:-850px;
 	background-color:transparent;
 	z-index:5;
-	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/mapdraft1.png");
+	/*background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/mapdraft1.png");*/
 	background-repeat:no-repeat;
 	background-position:center;
 }
@@ -173,14 +186,9 @@
 	min-width:490px;
 }
 #workwithus .frontpage-item.heading:hover{
-	max-width:70%;
-	float:left;
-	text-align:center;
-	height:150px;
-	display:inline-block;
-	-webkit-transform:scale(1.1) translateX(30px);
-	    -ms-transform:scale(1.1) translateX(30px);
-	        transform:scale(1.1) translateX(30px);
+	-webkit-transform:scale(1.05) translateX(10px);
+	    -ms-transform:scale(1.05) translateX(10px);
+	        transform:scale(1.05) translateX(10px);
 }
 #workwithus .frontpage-item.heading>a h1{
 	color:#fff !important;
@@ -197,7 +205,7 @@
 	float:left;
 	display:inline-block;
 	margin-top:30px;
-	margin-left:20px;
+	margin-left:10px;
 	width:50px;
-	animate: slide 1s ease;
+	/*animate: slide 1s ease;*/
 }

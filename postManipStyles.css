@@ -19,7 +19,11 @@ a{
 	text-decoration:none;
 }
 
-
+.full-width-container .expand.row-fluid, #container{
+	padding-left:0;
+	padding-right:0;
+	max-width:1500px;
+}
 .entry-meta{
 	display:none;
 }
@@ -33,17 +37,18 @@ a{
   display:none;
 }
 .postCatNav{
-  width:100%;
+  width:100vw;
   display:block;
-  height:50px;
+  height:40px;
   	/*background-color: rgba(102,153,204,0.2);*/
   	margin-top:10px;
-  	
+  	margin-left:20px;
+  	 	
 }
 
 .postCatHeadline{
 	cursor:pointer;
-	height:50px;
+	height:40px;
 	/*margin-right:10px;*/
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
@@ -75,7 +80,7 @@ a{
 	/*-webkit-transform:scale(1.1) translateX(0px);
 	    -ms-transform:scale(1.1) translateX(0px);
 	        transform:scale(1.1) translateX(0px);*/
-  background-color:rgba(0,0,102,1);
+  background-color:rgba(0,0,102,0.8);
 	-webkit-transition: all 0.5s ease-in;	
 	-o-transition: all 0.5s ease-in;
 	transition: all 0.5s ease-in;
@@ -86,12 +91,15 @@ a{
 
 
 .postCatContainer{
+	max-width:1200px;
+	margin-left:20px;
+	margin-right:20px;
 	position:relative;
 	font-family:sans-serif;
 	overflow:hidden;
 	display:block;
 	/*height:1px;*/
-	max-height:1px;
+	max-height:0px;
 	opacity:0;
 	-webkit-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
@@ -99,15 +107,21 @@ a{
 	float:none;
 	clear:both;
 	padding:0;
+
 }
 .postCatContainer.expanded{
 	max-height:10000px;
+
 	opacity:1;
 	/*height:auto;*/
-	-webkit-transition: all 1s ease-in 0.5s;
-	-o-transition: all 1s ease-in 0.5s;
-	transition: all 1s ease-in 0.5s;
-	padding-bottom:40px;
+	-webkit-transition: all 0.5s ease-in, opacity 1s ease-in 0.5s, max-height 1s ease-in 0.5s;
+	-o-transition: all 0.5s ease-in, opacity 1s ease-in 0.5s, max-height 1s ease-in 0.5s;
+	transition: all 0.5s ease-in, opacity 1s ease-in 0.5s, max-height 1s ease-in 0.5s;
+	padding:20px;
+	border: 2px solid rgba(102,153,204,0.2);
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	border-top-right-radius:10px;
 }
 
 
@@ -120,7 +134,8 @@ a{
 	overflow:hidden;
 	float:left;
 	border-radius:10px;
-	border:2px solid #c0c2c0;
+	/*border:2px solid #c0c2c0;*/
+	border: 2px solid rgba(102,153,204,0.2);
 	max-height:400px;
 }
 .postContainer h3{
