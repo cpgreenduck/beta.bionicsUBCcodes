@@ -12,6 +12,20 @@
 #partnersmapCont{
   margin-top:0 !important;
 }
+.map-div-overlay{
+opacity:1 !important;
+position:relative !important;
+
+}
+.map-div-overlay-fadein{
+background-color:transparent !important;
+}
+.map-div-overlay-full{
+position:static !important;
+}
+.map-label{
+top:0 !important;
+}
 .page-id-1917 .excerpt, .page-id-1921 .excerpt{
   display:none;
 }
