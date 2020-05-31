@@ -388,7 +388,7 @@ function dragElement(elmnt){
     document.addEventListener("mousemove",elementDrag);
     document.addEventListener("touchend",closeDragElement);
     document.addEventListener("touchmove",elementDrag);
-    alert('inside dragMouseDown');
+    //alert('inside dragMouseDown');
     //document.onmouseup = closeDragElement;
     // call a function whenever the cursor moves:
     //document.onmousemove = elementDrag;
