@@ -116,25 +116,27 @@
 height:300px;
 }
 #teamimg{
+position:relative;
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/membersFrontPage.png");
-	max-height:200px;
+	
 	-webkit-transition:all 1s ease-out;
 	-o-transition:all 1s ease-out;
 	transition:all 1s ease-out;
-	height:200px;
-	background-size:contain;
+	height:120px;
+	background-size: auto 100%;
 	background-repeat:repeat-x;
 }
 #teamimg .frontpage-item.heading{
 	color:#fff;
 	background-color:transparent;
-	height:80px;
+	height:120px;
 
 }
 #teamimg .frontpage-item.heading>h2{
 	color:#fff;
 	vertical-align:middle;
 	margin-top:40px;
+	margin-bottom:40px;
 	font-size:40px;
 }
 #teamimg:hover{

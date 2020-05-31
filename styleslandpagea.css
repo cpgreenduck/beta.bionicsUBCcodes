@@ -126,13 +126,20 @@
 	width:90%;
 	height:80%;
 	float:left;
-	-webkit-transition:opacity 1s ease-out, max-height 0.01s linear;
-	-o-transition:opacity 1s ease-out, max-height 0.01s linear;
-	transition:opacity 1s ease-out, max-height 0.01s linear;
-	z-index:20;
+	-webkit-transition:all 0.2s linear 0.5s, opacity 0.5s ease-out !important;
+	-o-transition:all 0.2s linear 0.5s, opacity 0.5s ease-out !important;
+	transition:all 0.2s linear 0.5s, opacity 0.5s ease-out !important;
+	z-index:2;
 	display:block;
 	border:none !important;
 }
+
+.map-div-overlay.expanded{
+	-webkit-transition: all 0.2s linear, opacity 0.5s ease-in 0.5s !important;
+	-o-transition: all 0.2s linear, opacity 0.5s ease-in 0.5s !important;
+	transition: all 0.2s linear, opacity 0.5s ease-in 0.5s !important;
+}
+
 /*.map-div-overlay:hover{
 	-webkit-transition:opacity 1s ease-in;
 	-o-transition:opacity 1s ease-in;
@@ -143,9 +150,9 @@
 	/*background-color:rgba(255,255,255,0.8);*/
 	width:100%;
 	height:90%;
-	-webkit-transition:opacity 1s ease-out,;
+	/*-webkit-transition:opacity 1s ease-out,;
 	-o-transition:opacity 1s ease-out;
-	transition:opacity 1s ease-out;
+	transition:opacity 1s ease-out;*/
 	padding:20px;
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
@@ -179,6 +186,12 @@ margin:10px;
 	-o-transition:opacity 1s ease-in;
 	transition:opacity 1s ease-in;
 }
+.map-div-overlay-full .postCatNav{
+	min-width:1000px;
+	margin:0px;
+	position:relative;
+	height:0px;
+}
 .map-label{
 	cursor:pointer;
 	position:relative;
@@ -202,7 +215,7 @@ margin:10px;
 	transition:all 1s ease-out;
 }
 .map-label:hover, .map-label.active{
-background-color:rgba(255,255,255,0.8);
+	background-color:rgba(255,255,255,0.8);
 	-webkit-transition:all 1s ease-in;
 	-o-transition:all 1s ease-in;
 	transition:all 1s ease-in;
