@@ -153,8 +153,9 @@ s	-webkit-transition: all 0.5s ease-in;
 	float:left;
 	border-radius:10px;
 	/*border:2px solid #c0c2c0;*/
-	border: 2px solid rgba(102,153,204,0.2);
+	border: 2px solid rgba(165, 208, 231, 0.8);
 	max-height:400px;
+	background-color:rgba(255,255,255,0.8);
 }
 .postContainer h3{
 	padding-top:0;
