@@ -59,9 +59,6 @@
   padding:10px;
 }
 
-/*.page-id-1917  .bio.field-item.full{
-  display:none !important;
-}*/
 
 .field-shell.field-shell-multiple>span.text-input{
   float:left;
@@ -80,11 +77,11 @@
 	display:none;
 }
 
-.page-id-1917 .span4>img, .page-id-1921 .span4>img{
+.page-id-1917 .span4>img, .page-id-1921 .span4>img, .page-id-2391 .span4>img{
   display:none;
 }
 
-.page-id-1917 .modal-body, .page-id-1921 .modal-body{
+.page-id-1917 .modal-body, .page-id-1921 .modal-body, .page-id-2391 .modal-body{
   overflow:hidden;
 }
 .specialization.field-item.full{
@@ -98,20 +95,7 @@
 #partnersmapCont{
   margin-top:0 !important;
 }
-/*.map-div-overlay{
-opacity:1 !important;
-position:relative !important;
 
-}
-.map-div-overlay-fadein{
-background-color:transparent !important;
-}
-.map-div-overlay-full{
-position:static !important;
-}
-.map-label{
-top:0 !important;
-}*/
 .map-label>h1, .map-label.active>h1{
 	font-size:18px;
 }
@@ -127,64 +111,6 @@ background-color:blue;
 	position:static;
 	height:500px;
 }
-.profile_cct{
-	padding:20px;
-}
 
-.page-id-1917  .excerpt .principal-investigator, .page-id-1917 .excerpt .principal-investigator{
-  display:block !important;
-}
-
-.date{
-  display:none;
-}
-.header-tags{
-  display:none !important;
-}
-.launch-btn{
-  display:none;
-}
-.iso-title{
-  font-size:20px;
-}
-.page-id-1917 .boxey-inside, .page-id-1921 .boxey-inside, .page-id-2391 .boxey-inside{
-  height:250px;
-}
-
-.iso .simple .iso_shortcode{
-  text-align:left;
-  float:left;
-}
-.page-id-1917 .picture.field-item.one-third, .page-id-1921 .picture.field-item.one-third, .page-id-2391 .picture.field-item.one-third{
-  width:200px !important;
-  overflow:hidden;
-  padding:10px;
-}
-
-/*.page-id-1917  .bio.field-item.full{
-  display:none !important;
-}*/
-
-.field-shell.field-shell-multiple>span.text-input{
-  float:left;
-}
-.field-shell.field-shell-specialization.field-shell-multiple .field{
-  float:left;
-  margin:0 10px 0 10px;
-}
-.fn.n>a {
-  pointer-events:none;
-}
-.modal-footer>a{
-  display:none;
-}
-
-.page-id-1917 .span4>img, .page-id-1921 .span4>img, .page-id-2391 .span4>img{
-  display:none;
-}
-
-.page-id-1917 .modal-body, .page-id-1921 .modal-body, .page-id-2391 .modal-body{
-  overflow:hidden;
-}
 
 
