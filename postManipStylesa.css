@@ -68,7 +68,8 @@ background-size:100%;
 	overflow:hidden;
 	position:relative;
 	/*background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/popupbgL.png');*/
-	background-color: rgba(102,153,204,0.2);
+	/*background-color: rgba(102,153,204,0.2);*/
+	background-color:rgba(165, 208, 231, 0.8);
 	-webkit-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;

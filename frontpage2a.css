@@ -90,7 +90,7 @@
 	background-color:rgba(0,0,0,0);
 	max-height:650px;
 }
-#research h2 a{
+#research h2 a, #research h1 a{
  color:white;
  opacity:1;
 }

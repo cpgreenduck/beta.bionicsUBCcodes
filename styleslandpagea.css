@@ -8,6 +8,9 @@
 /*@import url('https://cpgreenduck.github.io/bionircsUBCcodes/parallax.css');*/
 
 /* Frontpage-item styles*/
+.entry-content{
+background-image:none;
+}
 .frontpage-item{
 	font-size:1em;
 	font-family:sans-serif;
