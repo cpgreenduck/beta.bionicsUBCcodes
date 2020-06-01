@@ -112,5 +112,7 @@ background-color:blue;
 	height:500px;
 }
 
-
+.field-item > .field-shell > .field:last-child > *:last-child{
+margin:0;
+}
 
