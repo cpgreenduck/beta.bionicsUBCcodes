@@ -83,10 +83,10 @@ background-color:blue;
 .field-shell.field-shell-multiple>span.text-input{
   float:left;
 }
-/*.field-shell.field-shell-multiple .field{
+.field-shell.field-shell-specialization.field-shell-multiple .field{
   float:left;
   margin:0 10px 0 10px;
-}*/
+}
 .fn.n>a {
   pointer-events:none;
 }
