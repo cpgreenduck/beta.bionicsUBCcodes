@@ -130,15 +130,11 @@ background-color:blue;
 .profile_cct{
 	padding:20px;
 }
-.page-id-1917 .excerpt, .page-id-1921 .excerpt{
-  display:none;
-}
+
 .page-id-1917  .excerpt .principal-investigator, .page-id-1917 .excerpt .principal-investigator{
   display:block !important;
 }
-.page-id-2391 .excerpt .picture.field-item.one-third, .page-id-2391 .excerpt .name.field-item.two-third{
-	display:none;
-}
+
 .date{
   display:none;
 }
