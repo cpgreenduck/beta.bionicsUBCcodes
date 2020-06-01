@@ -106,7 +106,7 @@ s	-webkit-transition: all 0.5s ease-in;
 	padding-right:20px;
 	position:relative;
 	font-family:sans-serif;
-	background-color:white;
+	background-color:rgba(255,255,255,0.8);
 	overflow:hidden;
 	display:block;
 	/*height:1px;*/
@@ -122,7 +122,7 @@ s	-webkit-transition: all 0.5s ease-in;
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
 	border-top-right-radius:10px;
-	border: 0px solid rgba(102,153,204,0.2);
+	border: 0px solid rgba(165, 208, 231, 0.8);
 }
 .postCatContainer.expanded{
 	max-height:10000px;
@@ -131,7 +131,7 @@ s	-webkit-transition: all 0.5s ease-in;
 	/*-webkit-transition: all 0.5s ease-in linear, opacity 0.5s ease-in 0.5s, max-height 0.5s ease-in 0.5s;
 	-o-transition: all 0.5s ease-in linear, opacity 0.5s ease-in 0.5s, max-height 0.5s ease-in 0.5s;*/
 	/*transition: all 0.5s linear, opacity 0.5s ease-in 0.5s, max-height 0.5s ease-in 0.5s;*/
-	border: 2px solid rgba(102,153,204,0.2);
+	border: 2px solid rgba(165, 208, 231, 0.8);
 	transition: all 0.5s ease-in 0.5s, border 0.01s linear 0.5s, padding 0.01s linear 0.5s;
 	/*padding-top:20px;*/
 	padding: 20px;
