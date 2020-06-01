@@ -33,6 +33,10 @@ a{
 /*.post-byline{
 	display:none;
 }*/
+.entry-content{
+background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
+background-size:100%;
+}
 .navigation-links .pager{
 	display:none;
 }
