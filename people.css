@@ -34,9 +34,12 @@ background-color:blue;
 }
 .map-div-overlay{
 	position:static;
+
 }
 .map-div-overlay-full{
 	top:0;
+	position:static;
+	height:500px;
 }
 .profile_cct{
 	padding:20px;
