@@ -105,6 +105,7 @@ s	-webkit-transition: all 0.5s ease-in;
 	padding-right:20px;
 	position:relative;
 	font-family:sans-serif;
+	background-color:white;
 	overflow:hidden;
 	display:block;
 	/*height:1px;*/
