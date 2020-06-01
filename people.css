@@ -1,14 +1,100 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .iso-nav{
  clear:both;
  }
-/*.postCatHeadline{
-  margin:10px;
-  padding:10px;
-  height:50px;
-  width:350px;
+
+#normal-shell .picture.field-item, #normal-shell .picture.field-item, #normal-shell .name.field-item{
+	display:none;
+}
+
+.date{
+  display:none;
+}
+.header-tags{
+  display:none !important;
+}
+.launch-btn{
+  display:none;
+}
+.iso-title{
+  font-size:20px;
+}
+.page-id-1917 .boxey-inside, .page-id-1921 .boxey-inside, .page-id-2391 .boxey-inside{
+  height:250px;
+}
+#normal-shell .field-item{
+  line-height:14px;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+#normal-shell .field-item>span{
+  display:none;
+}
+.excerpt .iso-description{
+  margin-top:-30px;
+}
+.page-id-1917 .boxey-inside, .page-id-2391 .boxey-inside{
+  width:220px;
+  height:270px;
+}
+
+.boxey img{
+  width:auto;
+}
+
+.iso .simple .iso_shortcode{
+  text-align:left;
   float:left;
 }
-*/
+.page-id-1917 .picture.field-item.one-third, .page-id-1921 .picture.field-item.one-third, .page-id-2391 .picture.field-item.one-third{
+  width:200px !important;
+  overflow:hidden;
+  padding:10px;
+}
+
+/*.page-id-1917  .bio.field-item.full{
+  display:none !important;
+}*/
+
+.field-shell.field-shell-multiple>span.text-input{
+  float:left;
+}
+/*.field-shell.field-shell-multiple .field{
+  float:left;
+  margin:0 10px 0 10px;
+}*/
+.fn.n>a {
+  pointer-events:none;
+}
+.modal-footer>a{
+  display:none;
+}
+.name.field-item.one-third{
+	display:none;
+}
+
+.page-id-1917 .span4>img, .page-id-1921 .span4>img{
+  display:none;
+}
+
+.page-id-1917 .modal-body, .page-id-1921 .modal-body{
+  overflow:hidden;
+}
+.specialization.field-item.full{
+	width:100%;
+}
+.specialization.text-shell{
+	float:left;
+	margin-right:20px;
+	margin-left:10px;
+}
 #partnersmapCont{
   margin-top:0 !important;
 }
@@ -44,11 +130,14 @@ background-color:blue;
 .profile_cct{
 	padding:20px;
 }
-.page-id-1917 .excerpt, .page-id-1921 .excerpt, .page-id-2391 .excerpt{
+.page-id-1917 .excerpt, .page-id-1921 .excerpt{
   display:none;
 }
-.page-id-1917  .excerpt .principal-investigator, .page-id-1917 .excerpt .principal-investigator, .page-id-2391 .excerpt .principal-investigator{
+.page-id-1917  .excerpt .principal-investigator, .page-id-1917 .excerpt .principal-investigator{
   display:block !important;
+}
+.page-id-2391 .excerpt .picture.field-item.one-third, .page-id-2391 .excerpt .name.field-item.two-third{
+	display:none;
 }
 .date{
   display:none;
