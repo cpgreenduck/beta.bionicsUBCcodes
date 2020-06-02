@@ -4,9 +4,7 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-.page-id-2389 h1{
-	color:white;
-}
+
 .iso-nav{
  clear:both;
  }
@@ -112,7 +110,6 @@ background-color:blue;
 	top:0;
 	position:static;
 	height:500px;
-	background-color:none;
 }
 
 .field-item > .field-shell > .field:last-child > *:last-child{
