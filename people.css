@@ -4,7 +4,9 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
+.page-id-2389 h1{
+	color:white;
+}
 .iso-nav{
  clear:both;
  }
