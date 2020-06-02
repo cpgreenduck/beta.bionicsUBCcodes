@@ -110,6 +110,7 @@ background-color:blue;
 	top:0;
 	position:static;
 	height:500px;
+	background-color:none;
 }
 
 .field-item > .field-shell > .field:last-child > *:last-child{
