@@ -109,7 +109,6 @@ background-color:blue;
 .map-div-overlay-full{
 	top:0;
 	position:static;
-	height:500px;
 }
 
 .field-item > .field-shell > .field:last-child > *:last-child{
