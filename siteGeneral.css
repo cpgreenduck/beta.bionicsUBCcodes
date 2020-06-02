@@ -1,0 +1,23 @@
+.postContainer{
+	width:80%;
+	margin:10px;
+	padding:10px;
+	display:block;
+	height:auto;
+	overflow:hidden;
+	float:left;
+	border-radius:10px;
+	/*border:2px solid #c0c2c0;*/
+	border: 2px solid rgba(165, 208, 231, 0.8);
+	max-height:400px;
+	background-color:rgba(255,255,255,0.8);
+}
+
+.specialization.field-item.full{
+	width:100%;
+}
+.specialization.text-shell{
+	float:left;
+	margin-right:20px;
+	margin-left:10px;
+}
