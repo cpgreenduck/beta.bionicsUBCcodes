@@ -119,6 +119,7 @@ margin:0;
 background-image:none;
 }
 
-#members{
-	background-color:white;
+
+.simple_modal .boxey-inside, .simple_modal .boxey-inner{
+background-color:none;
 }

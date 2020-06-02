@@ -111,7 +111,7 @@ s	-webkit-transition: all 0.5s ease-in;
 	padding-right:20px;
 	position:relative;
 	font-family:sans-serif;
-	background-color:rgba(255,255,255,0.9);
+	background-color:rgba(255,255,255,0.8);
 	overflow:hidden;
 	display:block;
 	/*height:1px;*/
@@ -159,7 +159,7 @@ s	-webkit-transition: all 0.5s ease-in;
 	/*border:2px solid #c0c2c0;*/
 	border: 2px solid rgba(165, 208, 231, 0.8);
 	max-height:400px;
-	background-color:rgba(255,255,255,0.9);
+	background-color:rgba(255,255,255,0.8);
 }
 .postContainer h3{
 	padding-top:0;
