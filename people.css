@@ -115,4 +115,10 @@ background-color:blue;
 .field-item > .field-shell > .field:last-child > *:last-child{
 margin:0;
 }
+.boxey.entry-content{
+background-image:none;
+}
 
+#members{
+	background-color:white;
+}
