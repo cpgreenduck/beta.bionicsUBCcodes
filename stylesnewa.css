@@ -326,11 +326,11 @@ cursor:pointer;
 }
 
 .container1 .cont1 #hot-hip{
-	top:50%;
-	left:52%;
+	top:48%;
+	left:51%;
 }
 .container1 .cont1 #hot-hip.rotated{
-left:40%;
+	left:40%;
 }
 .container1 .cont1 #hot-spine{
 	top:20%;
@@ -363,18 +363,30 @@ left:40%;
 
 .container1 .cont1 #hot-arm{
 	top:-20%;
-	left:70%;
+	left:60%;
+	-webkit-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	transition:all 0.5s ease-out;
 }
 .container1 .cont1 #hot-arm.rotated{
 	left:38%;
+	-webkit-transition:all 0.5s ease-in;
+	-o-transition:all 0.5s ease-in;
+	transition:all 0.5s ease-in;
 }
 
 .container1 .cont1 #hot-leg{
-	top:25%;
+	top:20%;
 	left:25%;
+	-webkit-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	transition:all 0.5s ease-out;
 }
 .container1 .cont1 #hot-leg.rotated{
 	left:38%;
+	-webkit-transition:all 0.5s ease-in;
+	-o-transition:all 0.5s ease-in;
+	transition:all 0.5s ease-in;
 }
 .container1 .popup {
 	position:relative;
