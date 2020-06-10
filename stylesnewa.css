@@ -337,7 +337,7 @@ left:40%;
 	left:38%;
 }
 .container1 .cont1 #hot-spine.rotated{
-left:40%;
+   left:40%;
 }
 .container1 .cont1 #hot-hand{
 	top:25%;
@@ -353,6 +353,29 @@ left:40%;
 	transition:all 0.5s ease-in;
 }
 
+.container1 .cont1 #hot-head{
+	top:-30%;
+	left:43%;
+}
+.container1 .cont1 #hot-head.rotated{
+	left:38%;
+}
+
+.container1 .cont1 #hot-arm{
+	top:-20%;
+	left:70%;
+}
+.container1 .cont1 #hot-arm.rotated{
+	left:38%;
+}
+
+.container1 .cont1 #hot-leg{
+	top:25%;
+	left:25%;
+}
+.container1 .cont1 #hot-leg.rotated{
+	left:38%;
+}
 .container1 .popup {
 	position:relative;
 	overflow:hidden;
@@ -385,7 +408,7 @@ left:40%;
 
 .container1 .popup.active{
 	width:60%;
-
+		
 	min-width:400px;
 	min-height:250px;
 	opacity:0.9;
@@ -406,6 +429,16 @@ left:40%;
    -webkit-transition: all 0.5s ease-in;
    -o-transition: all 0.5s ease-in;
    transition: all 0.5s ease-in;
+
+}
+
+.container1 .popup.active .popup-cont{
+	width:96%;
+	height:75%;
+	overflow-y:auto;
+	overflow-x:hidden;
+	position:absolute;
+	top:50px;
 }
 
 .container1 .popup .exit{
@@ -440,6 +473,7 @@ left:40%;
 	-webkit-transition: opacity 1s ease-in;
 	-o-transition: opacity 1s ease-in;
 	transition: opacity 1s ease-in;
+
 }
 
 .popup_contents .excerpt-div{
