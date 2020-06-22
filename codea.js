@@ -226,7 +226,7 @@ function cycle(){
  }
 }*/
 
-const imageUrl = "http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/outputL.png";
+const imageUrl = "http://apsc-bionics.sites.olt.ubc.ca/files/2020/06/output3.png";
 let bgElement = document.querySelector(".bg-lazy");
 let loadingElement=document.querySelector("#loading");
 bgElement.classList.add("bg-loading");
