@@ -65,7 +65,7 @@
 	padding:10px;
 	min-height:50px;
 }
-.frontpage-item>h1, .frontpage-item>h2, .frontpage-item>h3{
+.frontpage-item h1, .frontpage-item h2, .frontpage-item h3{
   text-align:center;
   padding:0;
   margin:20px;
@@ -73,6 +73,9 @@
   opacity:0.8;
   color:#002145;
 }
+.white-text{
+	color:#ffffff;
+	}
 .frontpage-item>a{
   text-align:center;
   padding:0;
@@ -80,6 +83,7 @@
   font-weight:bolder;
   opacity:0.8;
   color:#002145;
+  line-height:40px;
 }
 /*.frontpage-item>h1{
 	color:#000;
