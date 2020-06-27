@@ -73,6 +73,14 @@
   opacity:0.8;
   color:#002145;
 }
+.frontpage-item>a{
+  text-align:center;
+  padding:0;
+  margin:20px;
+  font-weight:bolder;
+  opacity:0.8;
+  color:#002145;
+}
 /*.frontpage-item>h1{
 	color:#000;
 	font-size:40px;
