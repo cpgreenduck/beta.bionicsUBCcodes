@@ -53,6 +53,14 @@
 	-o-transition: all 0.5s ease-in;
 	transition: all 0.5s ease-in;
 }
+.frontpage-item.heading>a>h1:hover, .frontpage-item.heading>a>h2:hover{
+	-webkit-transform:scale(1.1);
+	    -ms-transform:scale(1.1);
+	        transform:scale(1.1);
+	-webkit-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
 .frontpage-item.desc{
 	padding:10px;
 	min-height:50px;
