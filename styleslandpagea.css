@@ -45,7 +45,7 @@
 	background-color:transparent;
 	min-width:300px;
 }
-.frontpage-item.heading a:hover{
+a .frontpage-item.heading:hover{
 	-webkit-transform:scale(1.1);
 	    -ms-transform:scale(1.1);
 	        transform:scale(1.1);
