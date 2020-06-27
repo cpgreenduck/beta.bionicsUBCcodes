@@ -469,6 +469,7 @@ cursor:pointer;
 	background-size:80%;
 	background-repeat:no-repeat;
 	background-position:center;
+	z-index:50;
 }
 .container1 .popup .exit:hover{
 	-webkit-transform:scale(1.1);
