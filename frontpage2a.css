@@ -90,10 +90,11 @@
 	background-color:rgba(0,0,0,0);
 	max-height:650px;
 }
-#research h2 a, #research h1 a{
+#research h2 a, #research h1 a, #partnerslabel h1 a, #workwithus h1 a{
  color:white;
  opacity:1;
 }
+
 
 .hilite{
 	width:45%;
@@ -175,39 +176,23 @@ position:relative;
 	width:50%;
 	
 }
-#partnerslabel .frontpage-item.heading>h1{
-	color:#fff;
-	}
+
 	
 #workwithus .frontpage-item.heading{
-	max-width:60%;
-	float:left;
+
 	text-align:center;
 	height:150px;
 	display:inline-block;
 	min-width:490px;
 }
-#workwithus .frontpage-item.heading:hover{
-	-webkit-transform:scale(1.05) translateX(10px);
-	    -ms-transform:scale(1.05) translateX(10px);
-	        transform:scale(1.05) translateX(10px);
-}
-#workwithus .frontpage-item.heading>a h1{
-	color:#fff !important;
-	opacity:0.8;
+
+#workwithus h1 a{
 	font-size:45px;
 	width:auto;
 	display:inline-block;
-	float:left;
+
 	text-align:center;
-	margin-left:20%;
+
 }
 
-#workwithus .frontpage-item.heading>a img{
-	float:left;
-	display:inline-block;
-	margin-top:30px;
-	margin-left:10px;
-	width:50px;
-	/*animate: slide 1s ease;*/
-}
+
