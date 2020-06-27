@@ -45,15 +45,7 @@
 	background-color:transparent;
 	min-width:300px;
 }
-.frontpage-item.heading>h1>a:hover, .frontpage-item.heading>h2>a:hover{
-	-webkit-transform:scale(1.1);
-	    -ms-transform:scale(1.1);
-	        transform:scale(1.1);
-	-webkit-transition: all 0.5s ease-in;
-	-o-transition: all 0.5s ease-in;
-	transition: all 0.5s ease-in;
-}
-.frontpage-item.heading>a>h1:hover, .frontpage-item.heading>a>h2:hover{
+.frontpage-item.heading:hover{
 	-webkit-transform:scale(1.1);
 	    -ms-transform:scale(1.1);
 	        transform:scale(1.1);
@@ -65,27 +57,14 @@
 	padding:10px;
 	min-height:50px;
 }
-.frontpage-item h1, .frontpage-item h2, .frontpage-item h3{
+.frontpage-item>h1, .frontpage-item>h2, .frontpage-item>h3{
   text-align:center;
   padding:0;
   margin:20px;
   font-weight:bolder;
   opacity:0.8;
-  color:#002145;
 }
-.white-text{
-	color:#ffffff;
-	}
-.frontpage-item>a{
-  text-align:center;
-  padding:0;
-  margin:20px;
-  font-weight:bolder;
-  opacity:0.8;
-  color:#002145;
-  line-height:50px;
-}
-/*.frontpage-item>h1{
+.frontpage-item>h1{
 	color:#000;
 	font-size:40px;
 }
@@ -95,7 +74,7 @@
 .frontpage-item>h3{
 	color:#000;
 	font-weight:normal;
-}*/
+}
 
 /*Research item styles*/
 .research-item{
