@@ -45,7 +45,7 @@
 	background-color:transparent;
 	min-width:300px;
 }
-a .frontpage-item.heading:hover{
+.frontpage-item.heading>h1>a:hover, .frontpage-item.heading>h2>a:hover{
 	-webkit-transform:scale(1.1);
 	    -ms-transform:scale(1.1);
 	        transform:scale(1.1);
