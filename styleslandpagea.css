@@ -45,7 +45,7 @@
 	background-color:transparent;
 	min-width:300px;
 }
-.frontpage-item.heading:hover{
+.frontpage-item.heading a:hover{
 	-webkit-transform:scale(1.1);
 	    -ms-transform:scale(1.1);
 	        transform:scale(1.1);
@@ -64,7 +64,7 @@
   font-weight:bolder;
   opacity:0.8;
 }
-.frontpage-item>h1{
+/*.frontpage-item>h1{
 	color:#000;
 	font-size:40px;
 }
@@ -74,7 +74,7 @@
 .frontpage-item>h3{
 	color:#000;
 	font-weight:normal;
-}
+}*/
 
 /*Research item styles*/
 .research-item{
