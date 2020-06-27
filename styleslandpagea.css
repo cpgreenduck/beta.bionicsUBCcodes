@@ -63,6 +63,7 @@ a .frontpage-item.heading:hover{
   margin:20px;
   font-weight:bolder;
   opacity:0.8;
+  color:#002145;
 }
 /*.frontpage-item>h1{
 	color:#000;

@@ -52,7 +52,10 @@
 	display: block;
 }
 .container1 a {	cursor:pointer;}
-.container1 a:hover {	cursor:pointer; -webkit-transform:translateX(15px) scale(1.05); -ms-transform:translateX(15px) scale(1.05); transform:translateX(15px) scale(1.05); -webkit-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease;}
+/*.container1 a:hover {	cursor:pointer; -webkit-transform:translateX(15px) scale(1.05); -ms-transform:translateX(15px) scale(1.05); transform:translateX(15px) scale(1.05); -webkit-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease;}*/
+.container1 a:hover{
+	color:#185685;
+}
 .container1 h1, .container1 h2, .container1 h3 {	cursor: auto;}
 .container1 h1, .container1 h2{
 	background: -o-linear-gradient(20deg,#3290c7, #bee8eb);
@@ -423,6 +426,7 @@ cursor:pointer;
 		
 	min-width:400px;
 	min-height:250px;
+	height:60%;
 	opacity:0.9;
 	padding:10px;
    /* margin: 10px 10px 0 auto;*/
@@ -430,7 +434,7 @@ cursor:pointer;
       /*margin:auto;*/
       margin-left:5%;
       margin-top:10%;
-      top:10%;
+      /*top:10%;*/
 /*for test popup LR 
       left:300px;
       width:30%*/ 
@@ -450,7 +454,7 @@ cursor:pointer;
 	overflow-y:auto;
 	overflow-x:hidden;
 	position:absolute;
-	top:50px;
+	/*top:50px;*/
 }
 
 .container1 .popup .exit{
