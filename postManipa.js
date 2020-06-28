@@ -61,6 +61,7 @@ window.onload=function(){
 	if(l1[0]){
 		if (n1&&l1.postCats[n1]){
 			l1.postCats[n1].activate();
+			console.log('trying to activate number');
 		}
 		else{
 			l1.postCats[0].activate();
