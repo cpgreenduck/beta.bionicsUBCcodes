@@ -59,11 +59,11 @@ console.log(n1);
 window.onload=function(){
 	console.log(v1);
 	if(l1[0]){
-		if (n1&&l1[n1]){
-			l1[n1].activate();
+		if (n1&&l1.postCats[n1]){
+			l1.postCats[n1].activate();
 		}
 		else{
-			l1[0].activate();
+			l1.postCats[0].activate();
 		}
 	}
 };
