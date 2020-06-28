@@ -110,6 +110,9 @@ background-color:blue;
 	top:0;
 	position:static;
 }
+.map-div-overlay-full .postCatNav{
+	height:40px;
+}
 
 .field-item > .field-shell > .field:last-child > *:last-child{
 margin:0;
