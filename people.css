@@ -112,6 +112,7 @@ background-color:blue;
 }
 .map-div-overlay-full .postCatNav{
 	height:40px;
+	margin-top:0px;
 }
 
 .field-item > .field-shell > .field:last-child > *:last-child{
