@@ -130,7 +130,7 @@
 
 #partnersmapCont .postCatContainer.map-div-overlay{
 	position:absolute;
-	width:100%;
+	width:95%;
 	height:80%;
 	float:left;
 	/*-webkit-transition:all 0.2s linear 0.5s, opacity 0.5s ease-out !important;
@@ -179,7 +179,7 @@ margin:10px;
 	transition:opacity 1s ease-in;
 }
 .map-div-overlay-full .postCatNav{
-	min-width:1000px;
+
 	margin:0px;
 	margin-left:20px;
 	height:50px;
@@ -187,6 +187,7 @@ margin:10px;
 }
 #partnersmapCont .map-div-overlay-full .postCatNav{
 	position:absolute;
+
 }
 .map-label{
 	cursor:pointer;
