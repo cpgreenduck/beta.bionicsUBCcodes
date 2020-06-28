@@ -58,9 +58,9 @@ var n1=parseInt(v1);
 console.log(n1);
 window.onload=function(){
 	console.log(v1);
-	if(l1[0]){
-		if (n1&&l1.postCatsActivators[n1]){
-			l1.postCatsActivators[n1].activate();
+	if(l1.postCatActivators[0]){
+		if (n1&&l1.postCatActivators[n1]){
+			l1.postCatActivators[n1].activate();
 			console.log('trying to activate number');
 		}
 		else{
