@@ -182,7 +182,8 @@ margin:10px;
 	min-width:1000px;
 	margin:0px;
 	margin-left:20px;
-	height:0px;
+	height:50px;
+	margin-top:-50px;
 }
 #partnersmapCont .map-div-overlay-full .postCatNav{
 	position:absolute;
