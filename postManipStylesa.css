@@ -45,20 +45,20 @@ padding-bottom:10px;
 .navigation-links .pager{
 	display:none;
 }
+
 .page-id-1450 .page-title.entry-title, .page-id-2209 .page-title.entry-title{
   display:none;
 }
+
 .postCatNav{
-  width:90%;
-  min-width:880px;
+  width:100%;
+  /*min-width:880px;*/
   display:block;
   height:40px;
   	/*background-color: rgba(102,153,204,0.2);*/
   	margin-top:10px;
-  	margin-left:20px;
+
   	float:left;
-  	min-width:
-  	 	
 }
 
 .postCatHeadline{
@@ -105,14 +105,17 @@ s	-webkit-transition: all 0.5s ease-in;
   color:	#c2e3fc;
 }
 
+.wrapper_subpage{
+	width:90%;
 
+}
 .postCatContainer{
 	max-width:1500px;
 	margin-left:20px;
 	margin-right:20px;
 	padding-left:20px;
 	padding-right:20px;
-
+	width:100%;
 	font-family:sans-serif;
 	background-color:rgba(255,255,255,0.8);
 	overflow:hidden;
