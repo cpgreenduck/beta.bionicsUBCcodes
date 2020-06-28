@@ -39,9 +39,34 @@ class postCatSeries{
 	}
 }
 
+function getQueryVariable(variable)
+{
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+    }
+    return(false);
+}
+
 var l1=new postCatSeries(".postCatContainer:not(.l2)",".postCatHeadline:not(.l2)");
 var l2=new postCatSeries(".postCatContainer.l2",".postCatHeadline.l2");
 
+var v1=getQueryVariable("activate");
+var n1=parseInt(v1);
+console.log(n1);
+window.onload=function(){
+	console.log(v1);
+	if(l1[0]){
+		if (n1&&l1[n1]){
+			l1[n1].activate();
+		}
+		else{
+			l1[0].activate();
+		}
+	}
+};
 
 AOS.init();
 
