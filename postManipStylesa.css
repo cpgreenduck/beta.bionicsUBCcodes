@@ -137,6 +137,9 @@ s	-webkit-transition: all 0.5s ease-in;
 	border-top-right-radius:10px;
 	border: 0px solid rgba(165, 208, 231, 0.8);
 }
+.page-id-2395 .postCatContainer{
+	width:100%;
+}
 .postCatContainer.expanded{
 	max-height:10000px;
 	opacity:1;
