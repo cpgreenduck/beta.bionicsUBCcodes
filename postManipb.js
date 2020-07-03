@@ -1,3 +1,8 @@
+/*var postCats=document.querySelectorAll(".postCatContainer:not(.l2)");
+var postCatHeadlines=document.querySelectorAll(".postCatHeadline:not(.l2)");
+var postCatActivators=[];
+*/
+
 function is_IE() {
   return (window.navigator.userAgent.match(/MSIE|Trident/) !== null);
 }
@@ -17,7 +22,6 @@ if (is_IE()==false){
 
 	let postCatNav=document.querySelector(".postCatNav");
 	postCatNav.style.display="block";
-
 
 	class postCatActivator{
 		activate(){
@@ -86,3 +90,4 @@ if (is_IE()==false){
 
 	AOS.init();
 }
+
