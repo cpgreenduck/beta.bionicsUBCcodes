@@ -4,7 +4,7 @@ function is_IE() {
 
 /* https://stackoverflow.com/questions/49986720/how-to-detect-internet-explorer-11-and-below-versions*/
 
-if (is_IE==false){
+if (is_IE()==false){
 /*jshint esversion: 6 */
 /* ID's interactive objects*/
 	var activators=[];

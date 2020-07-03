@@ -2,7 +2,7 @@ function is_IE() {
   return (window.navigator.userAgent.match(/MSIE|Trident/) !== null);
 }
 
-if (is_IE==false){
+if (is_IE()==false){
 
 	/*jshint esversion: 6 */
 	let postCatNav=document.querySelector(".postCatNav");
