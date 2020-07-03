@@ -8,7 +8,7 @@
                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://apsc-bionics.sites.olt.ubc.ca/about_2">About</a></li>
                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://bionics.ubc.ca/research2_2">Research</a></li>
                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://bionics.ubc.ca/people_2">People</a></li>
-               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://bionics.ubc.ca/news-and-spotlights">News</a></li>
+               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://bionics.ubc.ca/news-and-spotlights_2">News</a></li>
                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://bionics.ubc.ca/contact-us_2">Contact</a></li>
             </ul>
          </div>
@@ -16,22 +16,27 @@
    </div>
 </div>
 
+<div class="wrapper_subpage">
+
 <div class="postCatNav">
-<div class="postCatHeadline"><h2>Spinal Regeneration</h2></div>
-<div class="postCatHeadline"><h2>Bio-printing</h2></div>
-<div class="postCatHeadline"><h2>Implantables and Biomedical Devices</h2></div>
+<div class="postCatHeadline active"><h2>Neural Regeneration</h2></div>
+<div class="postCatHeadline"><h2>Biomedical Devices</h2></div>
+<div class="postCatHeadline"><h2>Assistive Devices</h2></div>
 <div class="postCatHeadline"><h2>Soft Robotics</h2></div>
+<div class="postCatHeadline"><h2>Biomaterials</h2></div>
+<div class="postCatHeadline"><h2>Bio-printing</h2></div>
+<div class="postCatHeadline"><h2>Wearables</h2></div>
 <div class="specialheadline postCatHeadline"><h2>Student Highlights</h2></div>
 </div>
 
-<div class="postCatContainer">
-[loop query="tag=desc-spinal-regeneration&amp;"]
+<div class="postCatContainer expanded">
+[loop query="tag=desc-neural-regeneration&amp;"]
 <div class="descriptionContainer postContainer">
 [cf 'Summary']
 <h4>More Background: [link_with_content]</h4>
 </div>
 [/loop]
-[loop query="category_name=research_highlights&spinal-regeneration&amp;amp;"]
+[loop query="category_name=neural-regeneration&amp;amp;"]
 <div class="postContainer fadeclass" data-aos="fade-right">
 <div class="postThumbnail">[the_post_thumbnail]</div>
 <h3><strong>[link_with_content]</strong></h3>
@@ -43,31 +48,31 @@
 </div>
 
 <div class="postCatContainer">
-[loop query="tag=desc-bio-printing&amp;"]
-<div class="descriptionContainer postContainer">
-[cf 'Summary']
-<h4>More Background: [link_with_content]</h4>
-</div>
-[/loop]
-[loop query="category_name=bio-printing&amp;amp;"]
-<div class="postContainer fadeclass" data-aos="fade-right">
-<div class="postThumbnail">[the_post_thumbnail]</div>
-<h3><strong>[link_with_content]</strong></h3>
-[cf 'Publication']
-[cf 'Media']
-[cf 'Summary']
-</div>
-[/loop]
-</div>
-
-<div class="postCatContainer">
-[loop query="category_name=descriptions&tag=desc-implantables&amp;"]
+[loop query="category_name=descriptions&tag=desc-biomedical-devices&amp;"]
 <div class="descriptionContainer postContainer">
 [cf 'Summary']
 <h4>More Background: [link_with_content]</h4>
 </div>
 [/loop]
 [loop query="category_name=biomedical-devices&amp;amp;"]
+<div class="postContainer fadeclass" data-aos="fade-right">
+<div class="postThumbnail">[the_post_thumbnail]</div>
+<h3><strong>[link_with_content]</strong></h3>
+[cf 'Publication']
+[cf 'Media']
+[cf 'Summary']
+</div>
+[/loop]
+</div>
+
+<div class="postCatContainer">
+[loop query="category_name=descriptions&tag=desc-assistive-devices&amp;"]
+<div class="descriptionContainer postContainer">
+[cf 'Summary']
+<h4>More Background: [link_with_content]</h4>
+</div>
+[/loop]
+[loop query="category_name=assistive-devices&amp;amp;"]
 <div class="postContainer fadeclass" data-aos="fade-right">
 <div class="postThumbnail">[the_post_thumbnail]</div>
 <h3><strong>[link_with_content]</strong></h3>
@@ -94,8 +99,62 @@
 [cf 'Summary']
 </div>
 [/loop]
-
 </div>
+
+<div class="postCatContainer">
+[loop query="category_name=descriptions&tag=desc-biomaterials&amp;"]
+<div class="descriptionContainer postContainer">
+[cf 'Summary']
+<h4>More Background: [link_with_content]</h4>
+</div>
+[/loop]
+[loop query="category_name=biomaterials&amp;amp;"]
+<div class="postContainer fadeclass" data-aos="fade-right">
+<div class="postThumbnail">[the_post_thumbnail]</div>
+<h3><strong>[link_with_content]</strong></h3>
+[cf 'Publication']
+[cf 'Media']
+[cf 'Summary']
+</div>
+[/loop]
+</div>
+
+<div class="postCatContainer">
+[loop query="category_name=descriptions&tag=desc-bio-printing&amp;"]
+<div class="descriptionContainer postContainer">
+[cf 'Summary']
+<h4>More Background: [link_with_content]</h4>
+</div>
+[/loop]
+[loop query="category_name=bio-printing&amp;amp;"]
+<div class="postContainer fadeclass" data-aos="fade-right">
+<div class="postThumbnail">[the_post_thumbnail]</div>
+<h3><strong>[link_with_content]</strong></h3>
+[cf 'Publication']
+[cf 'Media']
+[cf 'Summary']
+</div>
+[/loop]
+</div>
+
+<div class="postCatContainer">
+[loop query="category_name=descriptions&tag=desc-wearables&amp;"]
+<div class="descriptionContainer postContainer">
+[cf 'Summary']
+<h4>More Background: [link_with_content]</h4>
+</div>
+[/loop]
+[loop query="category_name=wearables&amp;amp;"]
+<div class="postContainer fadeclass" data-aos="fade-right">
+<div class="postThumbnail">[the_post_thumbnail]</div>
+<h3><strong>[link_with_content]</strong></h3>
+[cf 'Publication']
+[cf 'Media']
+[cf 'Summary']
+</div>
+[/loop]
+</div>
+
 <div class="postCatContainer">
 [loop query="category_name=student-highlights&amp;amp;"]
 <div class="postContainer fadeclass" data-aos="fade-right">
@@ -110,6 +169,7 @@
 </div>
 [/loop]
 
+</div>
 </div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cpgreenduck.github.io/bionicsUBCcodes/postManip.js"></script>

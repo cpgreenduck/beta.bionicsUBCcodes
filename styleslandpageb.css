@@ -1,0 +1,233 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*@import url('https://cpgreenduck.github.io/bionircsUBCcodes/parallax.css');*/
+
+/* Frontpage-item styles*/
+.page-id-2383 .entry-content, .page-id-2496 .entry-content{
+	background-image:none;
+}
+.page-id-2383 .postCatContainer{
+	background-color:none;
+}
+
+.frontpage-item{
+	font-size:1em;
+	font-family:sans-serif;
+	width:100%;
+	/*padding:20px;*/
+	padding:0;
+	min-width:600px;
+	/*background-color:	#c2e3fc;*/
+	background-color:#fff;
+	/*margin-top:10px;*/
+ 	/*clear:both;*/
+	height:auto;
+	
+   overflow:hidden;
+	text-align:left;
+	float:left;
+	position:relative;
+   
+}
+.frontpage-item.heading{
+	min-height:30px;
+	height:70px;
+	padding:0 !important;
+	margin:0 !important;
+	-webkit-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	transition:all 0.5s ease-out;
+	background-color:transparent;
+	min-width:300px;
+}
+
+.frontpage-item.heading.link:hover{
+	-webkit-transform:scale(1.1);
+	    -ms-transform:scale(1.1);
+	        transform:scale(1.1);
+	-webkit-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+.frontpage-item.desc{
+	padding:10px;
+	min-height:50px;
+}
+.frontpage-item>h1, .frontpage-item>h2, .frontpage-item>h3{
+  text-align:center;
+  padding:0;
+  margin:20px;
+  font-weight:bolder;
+  opacity:0.8;
+}
+.frontpage-item>h1{
+	color:#002145;
+	font-size:40px;
+}
+.frontpage-item>h2{
+	font-size:32px;
+		color:#002145;
+}
+.frontpage-item>h3{
+	color:#002145;
+	font-weight:normal;
+}
+
+/*Research item styles*/
+.research-item{
+	.aos-init;
+	.aos-animate;
+	width:100px;
+	max-height:150px;
+	/*height:120px;*/
+	margin:10px;
+	text-align:center;
+	float:left;
+	-webkit-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	transition:all 0.5s ease-out;
+	padding:0;
+	z-index:100;
+}
+
+.research-item.aos-init.aos-animate:hover{
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+	-webkit-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+	z-index:100;
+}
+.research-item img{
+	width:70px;
+	height:70px;
+}
+.research-item h4{
+  margin-top:0;
+  padding-top:0;
+  color:#000;
+  opacity:0.6;
+  font-size:16px;
+}
+
+
+
+/*Map styles*/
+
+.map-div-overlay-full{
+	position:absolute;
+	top:50px;
+	width:100%;
+	height:90%;
+	opacity:1;
+	display:none;
+}
+
+#partnersmapCont .postCatContainer.map-div-overlay{
+	position:absolute;
+	width:95%;
+	height:80%;
+	float:left;
+	/*-webkit-transition:all 0.2s linear 0.5s, opacity 0.5s ease-out !important;
+	-o-transition:all 0.2s linear 0.5s, opacity 0.5s ease-out !important;
+	transition:all 0.2s linear 0.5s, opacity 0.5s ease-out !important;*/
+	z-index:2;
+	display:block;
+	border:none;
+}
+
+.map-div-overlay-fadein{
+	opacity:1;
+	/*background-color:rgba(255,255,255,0.8);*/
+	width:100%;
+	height:90%;
+	padding:20px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	overflow:hidden;
+}
+.imgholder{
+width:350px;
+height:100px;
+float:left;
+
+margin:10px;
+	display:flex;
+
+}
+.imgholder>img{
+	max-width:300px;
+   max-height:100px;
+
+	margin: auto;
+}
+.imgholder>a img{
+	max-width:300px;
+	max-height:100px;
+	margin: auto;
+}
+
+.map-div-overlay:hover > .map-div-overlay-fadein{
+	opacity:1;
+	-webkit-transition:opacity 1s ease-in;
+	-o-transition:opacity 1s ease-in;
+	transition:opacity 1s ease-in;
+}
+.map-div-overlay-full .postCatNav{
+
+	margin:0px;
+	margin-left:20px;
+	height:50px;
+	margin-top:-50px;
+}
+#partnersmapCont .map-div-overlay-full .postCatNav{
+	position:absolute;
+
+}
+.map-label{
+	cursor:pointer;
+	position:relative;
+	float:left;
+	margin-right:10px;
+
+	height:50px;
+	z-index:2px;
+	background-color: rgba(255,255,255,0.4);
+	text-align:center;
+	opacity:1;
+	width:auto;
+	padding-left:10px;
+	padding-right:10px;
+	
+	/*overflow:hidden;*/
+	border-radius-top-left:10px;
+	border-radius-top-right:10px;
+		-webkit-transition:all 1s ease-out;
+	-o-transition:all 1s ease-out;
+	transition:all 1s ease-out;
+}
+.map-label:hover, .map-label.active{
+	background-color:rgba(255,255,255,0.8);
+	-webkit-transition:all 1s ease-in;
+	-o-transition:all 1s ease-in;
+	transition:all 1s ease-in;
+		background-color: rgba(255,255,255,0.8);
+}
+.map-label>h1{
+	/*color:#000;*/
+	font-size:32px;
+	margin: 10px;
+	color:#002145;
+}
+.map-label.active>h1{
+	/*color:#000;*/
+	font-size:32px;
+	margin: 10px;
+	color:#185685;
+}

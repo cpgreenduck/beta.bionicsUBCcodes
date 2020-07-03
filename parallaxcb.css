@@ -1,0 +1,132 @@
+/* Tiny reset thingy */
+/*try position fixed https://www.cssscript.com/fixed-position-parallax-scroll-effect-pure-css/*/
+body,html{margin:0;padding:0;}
+
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+ /* height: 100vh;*/
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  overflow-y:auto;
+  /* Enable scrolling on the page. */
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  /*perspective: 2px;*/
+  margin-top:-10px;
+}
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  position:relative;
+  /*height: 50vh;*/
+  /*height:30vh;*/
+  height:300px;
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-content {
+	position:relative;
+	overflow:hidden;
+	height:80vh;
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat:no-repeat;
+	width:100%;
+}
+
+.parallax{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:0;
+}
+.parallax:before{
+	content: "";
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	height:100%;
+	z-index:0;
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-size:120% auto;
+	-webkit-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	will-change:top;
+}	
+	
+/*
+.parallax::after {
+  /* Display and position the pseudo-element 
+  content: " ";
+  position:absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*backface-visibility:visible;
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. 
+  transform: translateZ(0px) translate3d(0,0,0);
+  will-change:transform;
+  background-attachment:fixed;
+  /* Force the background image to fill the whole element. 
+  background-size: 200vh;
+  background-repeat:no-repeat;
+  background-position: center;
+  /* Keep the image from overlapping sibling elements.  
+  z-index: 0;
+  
+}*/
+
+/* The styling for the static div. */
+.static {
+	height:auto;
+	background-color:rgba(0,0,0,0);
+	z-index:5;
+}
+.static_par_0ht{
+	height:0;
+	width:100%;
+	padding:0;
+	margin:0;
+	display:block;
+	z-index:5;
+	margin-top:-10px;
+}
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg1, .bg3 {
+height:400px;
+}
+
+
+/*.bg1::after {
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
+}*/
+.bg1, .bg3{ background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/06/SPINALCONNECTIONS4.png');}
+
+.bg2{
+	height:800px;
+}
+.bg2{
+background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');}
+/*.bg2::after {
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
+}
+
+.bg3::after {
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
+}*/
+
