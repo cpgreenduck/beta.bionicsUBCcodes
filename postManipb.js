@@ -28,6 +28,7 @@ if (is_IE()==false){
 		
 			for (let step1=0;step1<this.postCatSeries.postCats.length;step1++){
 					this.postCatSeries.postCats[step1].classList.remove("expanded");
+					this.postCatSeries.postCats[step1].classList.remove("def");
 		   		this.postCatSeries.postCatHeadlines[step1].classList.remove("active");
 			}
 			this.postCat.classList.add("expanded");

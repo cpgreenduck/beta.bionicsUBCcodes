@@ -141,6 +141,10 @@ s	-webkit-transition: all 0.5s ease-in;
 .page-id-2395 .postCatContainer{
 	width:100%;
 }
+.postCatContainer.def{
+	max-height:10000px;
+	transition:all 0s ease 0s;
+}
 .postCatContainer.expanded{
 	max-height:10000px;
 	opacity:1;
