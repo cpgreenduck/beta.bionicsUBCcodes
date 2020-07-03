@@ -20,9 +20,10 @@ if (is_IE()==false){
 	document.getElementsByTagName( "head" )[0].appendChild( link );
 	console.log(link);
 
-	let postCatNav=document.querySelector(".postCatNav");
-	postCatNav.style.display="block";
-
+	let postCatNavs=document.querySelectorAll(".postCatNav");
+	for (let step0=0;step0<postCatNavs.length){
+		postCatNavs[step0].style.display="block";
+	}
 	class postCatActivator{
 		activate(){
 		
