@@ -21,7 +21,7 @@ if (is_IE()==false){
 	console.log(link);
 
 	let postCatNavs=document.querySelectorAll(".postCatNav");
-	for (let step0=0;step0<postCatNavs.length){
+	for (let step0=0;step0<postCatNavs.length;step0++){
 		postCatNavs[step0].style.display="block";
 	}
 	class postCatActivator{
