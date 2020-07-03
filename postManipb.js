@@ -33,7 +33,7 @@ if (is_IE()==false){
 			}
 			this.postCat.classList.add("expanded");
 		 	this.postCatHeadline.classList.add("active");
-		 	setTimeout(function(){ AOS.refresh();}, 500);
+		 	setTimeout(function(){ AOS.refresh();}, 700);
 		 	console.log('refreshed Aos');
 		}
 			constructor(postCatSeries,step,postCat,postCatHeadline){
