@@ -2,7 +2,7 @@ function is_IE() {
   return (window.navigator.userAgent.match(/MSIE|Trident/) !== null);
 }
 
-if (!is_IE){
+if (is_IE==false){
 	/*var postCats=document.querySelectorAll(".postCatContainer:not(.l2)");
 	var postCatHeadlines=document.querySelectorAll(".postCatHeadline:not(.l2)");
 	var postCatActivators=[];
