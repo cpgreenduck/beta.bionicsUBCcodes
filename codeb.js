@@ -28,8 +28,8 @@ if (is_IE()==false){
 	var transTimeout=600;
 	var activated=false;
 
-	var zoomMin=1.2;
-	var zoomAmt=1.5;
+	var zoomMin=1;
+	var zoomAmt=1;
 	var zoomMax=3;
 	var pan=[0,0,0,0];
 	var wd=manCont.offsetWidth;

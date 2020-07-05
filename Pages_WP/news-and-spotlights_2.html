@@ -8,36 +8,32 @@
                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://apsc-bionics.sites.olt.ubc.ca/about_2">About</a></li>
                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://bionics.ubc.ca/research2_2">Research</a></li>
                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://bionics.ubc.ca/people_2">People</a></li>
-               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://bionics.ubc.ca/news-and-spotlights">News</a></li>
+               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://bionics.ubc.ca/news-and-spotlights_2">News</a></li>
                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="http://bionics.ubc.ca/contact-us_2">Contact</a></li>
             </ul>
          </div>
       </div>
    </div>
 </div>
-
-<div style="width:60%;float:left">
-<h1>News and Spotlights</h1>
-[loop query="posts_per_page=100&category_name=news,spotlights&amp;amp;"]
-<div class="postContainer fadeclass" data-aos="fade-right">
-<h3><strong>[link_with_content]</strong></h3>
-<div class="postThumbnail">[the_post_thumbnail]</div>
-[the_date]
-[the_excerpt]
-
+<div style="width:60%;float:left;margin-left:10px;">
+   <h1>News and Spotlights</h1>
+   [loop query="posts_per_page=100&category_name=news,spotlights&amp;amp;"]
+   <div class="postContainer fadeclass" data-aos="fade-right">
+      <h3><strong>[link_with_content]</strong></h3>
+      <div class="postThumbnail">[the_post_thumbnail]</div>
+      [the_date]
+      [the_excerpt]
+   </div>
+   [/loop]
 </div>
-[/loop]
-</div>
-<div style="width:40%;float:left">
-<h1>Social Media</h1>
-<a href="https://twitter.com/bionicsnetwork"><img class="alignnone size-thumbnail wp-image-1432" src="http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/twitter-e1589332806453.png" alt="" width="50" height="50" style="float:left;"/></a>
-
-<a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/BionicsNetwork?ref_src=twsrc%5Etfw" style="float:left">Tweets by BionicsNetwork</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<a href="https://www.facebook.com/BionicsNetwork/"><img class="alignnone size-thumbnail wp-image-1431" src="http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/facebook-e1589332846179.png" alt="" width="50" height="50" style="float:left;" /></a>
-<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBionicsNetwork%2F&tabs=timeline&width=350&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden;float:left" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<div style="width:35%;float:left">
+   <h1>Social Media</h1>
+   <a href="https://twitter.com/bionicsnetwork"><img class="alignnone size-thumbnail wp-image-1432" src="http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/twitter-e1589332806453.png" alt="" width="50" height="50" style="float:left;"/></a>
+   <a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/BionicsNetwork?ref_src=twsrc%5Etfw" style="float:left">Tweets by BionicsNetwork</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+   <a href="https://www.facebook.com/BionicsNetwork/"><img class="alignnone size-thumbnail wp-image-1431" src="http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/facebook-e1589332846179.png" alt="" width="50" height="50" style="float:left;" /></a>
+   <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBionicsNetwork%2F&tabs=timeline&width=350&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden;float:left" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 </div>
 </div>
-<script src="https://cpgreenduck.github.io/bionicsUBCcodes/code.js"></script>
+<script src="https://cpgreenduck.github.io/beta.bionicsUBCcodes/postManipb.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();	</script>

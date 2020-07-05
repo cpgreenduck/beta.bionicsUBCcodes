@@ -15,47 +15,40 @@
       </div>
    </div>
 </div>
-
 <div class="postCatNav">
-<div class="postCatHeadline active">
-<h2>Bionics Network</h2>
-</div><div class="postCatHeadline">
-<h2>Bionics</h2>
-</div><div class="postCatHeadline">
-<h2>Bionics History</h2>
+   <div class="postCatHeadline active">
+      <h2>Bionics Network</h2>
+   </div>
+   <div class="postCatHeadline">
+      <h2>Background</h2>
+   </div>
+   <div class="postCatHeadline">
+      <h2>History</h2>
+   </div>
 </div>
+<div id="bionics-network" class="postCatContainer def expanded">
+   <h2> Bionics Network</h2>
+   [loop query="tag=about-bionics-network&amp;amp;"]
+   <div class="postContainer">
+      [the_content]
+   </div>
+   [/loop]
 </div>
-<div class="postCatContainer expanded">[loop query="tag=about-bionics-network&amp;amp;"]
-<div class="postContainer">
-[the_content]
-
+<div id="bionics-background" class="postCatContainer def">
+   <h2> Bionics Background</h2>
+   [loop query="tag=bionics-background&amp;amp;"]
+   <div class="postContainer" style="max-height:2000px;">
+      [the_content]
+   </div>
+   [/loop]
 </div>
-[/loop]
-
-</div>
-
-<div class="postCatContainer">
-
-[loop query="tag=bionics-background&amp;amp;"]
-<div class="postContainer" style="max-height:2000px;">
-<img class=" wp-image-1503 aligncenter" src="http://apsc-bionics.sites.olt.ubc.ca/files/2018/06/word_cloud_4-360x150.png" alt="" width="500" />
-[the_content]
-
-</div>
-[/loop]
-
-</div>
-
-<div class="postCatContainer">[loop query="tag=what-is-bionic&amp;amp;"]
-<div class="postContainer" style="max-height:2000px;">
-[the_content]
-
-</div>
-[/loop]
-
-
-
+<div id="bionics-history" class="postCatContainer def">
+   <h2>History of Bionics Network</h2>
+   [loop query="tag=what-is-bionic&amp;amp;"]
+   <div class="postContainer" style="max-height:2000px;">
+      [the_content]
+   </div>
+   [/loop]
 </div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cpgreenduck.github.io/bionicsUBCcodes/postManip.js"></script>
-
+<script src="https://cpgreenduck.github.io/beta.bionicsUBCcodes/postManipb.js"></script>
