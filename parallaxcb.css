@@ -23,16 +23,21 @@ body,html{margin:0;padding:0;}
   /*height:30vh;*/
   height:300px;
   /* For text formatting. */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .parallax-content {
 	position:relative;
 	overflow:hidden;
 	height:80vh;
-	-webkit-background-size:cover;
 	background-size:cover;
 	background-attachment: fixed;
 	background-position: center center;
@@ -129,4 +134,3 @@ background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.
 .bg3::after {
   background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
 }*/
-

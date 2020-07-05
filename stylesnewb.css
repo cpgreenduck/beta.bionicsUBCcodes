@@ -270,7 +270,6 @@ cursor:pointer;
 }
 .notransition{
 	-webkit-transition: none !important;
-	-moz-transition: none !important;
 	-o-transition: none !important;
 	transition: none !important;
 }
@@ -797,4 +796,3 @@ to { opacity: 1}
 	from{ -webkit-transform:translateX(-5400px); transform:translateX(-5400px)}
 	to{ -webkit-transform: translateX(0); transform: translateX(0)}
 }
-

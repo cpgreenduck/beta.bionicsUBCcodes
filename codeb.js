@@ -28,14 +28,10 @@ if (is_IE()==false){
 	var transTimeout=600;
 	var activated=false;
 
-	var zoomMin=1;
-	var zoomAmt=1;
+	var zoomMin=1.3;
+	var zoomAmt=1.5;
 	var zoomMax=3;
 	var pan=[0,0,0,0];
-	var wd=manCont.offsetWidth;
-	var ht=manCont.offsetHeight;
-	var xlim=wd/2;
-	var ylim=ht/2;
 	var transStep=0.3;
 	var panStep=10;
 
@@ -115,8 +111,8 @@ if (is_IE()==false){
 	}
 
 	function getPanLims(){
-			xPanLim=container1.offsetWidth/2-20;
-			yPanLim=container1.offsetHeight/2-20;
+			xPanLim=container1.offsetWidth/2-10;
+			yPanLim=container1.offsetHeight/2-10;
 	}
 	getPanLims();
 
@@ -260,6 +256,13 @@ if (is_IE()==false){
 	  
 	});
 
+	var wd=manCont.offsetWidth;
+	var ht=manCont.offsetHeight;
+
+	var xlim=wd/2;
+	var ylim=ht/2;
+	console.log(xlim);
+	console.log(ylim);
 	/*Control Click Hover over man*/
 	container1.addEventListener("mouseenter",function(event){clickHover.style.opacity="0";
 		clickHover.style.zIndex="-2";console.log("enter");clickHover.style.webkitTransform="scale(1.5)";});
@@ -416,7 +419,7 @@ if (is_IE()==false){
 		 // set the element's new position:
 		 //elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
 		 //elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-		 if( (Math.abs(transMat[0]-pos1)<xPanLim) && (Math.abs(transMat[1]-pos2)<yPanLim) ){
+		 if( (Math.abs(transMat[0]-pos1)<xPanLim) && (Math.abs(transMat[1]-pos2)<yPanLim) ){//if within limits
 			elmnt.style.webkitTransform="translateX(" + (transMat[0] - pos1) + "px) translateY(" + (transMat[1] - pos2) + "px)";
 			}
 	  }
