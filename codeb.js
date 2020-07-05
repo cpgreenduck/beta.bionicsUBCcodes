@@ -422,6 +422,20 @@ if (is_IE()==false){
 		 if( (Math.abs(transMat[0]-pos1)<xPanLim) && (Math.abs(transMat[1]-pos2)<yPanLim) ){//if within limits
 			elmnt.style.webkitTransform="translateX(" + (transMat[0] - pos1) + "px) translateY(" + (transMat[1] - pos2) + "px)";
 			}
+
+		 else if((transMat[0]-pos1)>=xPanLim){
+				manCont.style.webkitTransform="translateX(" + xPanLim + "px) translateY(" + transMat[1] + "px)";
+			}
+		else if ((transMat[0]-pos1)<=-xPanLim){
+				manCont.style.webkitTransform="translateX(" + -xPanLim + "px) translateY(" + transMat[1] + "px)";
+			}
+		else if ((transMat[1]-pos2)<=-yPanLim){
+				manCont.style.webkitTransform="translateX(" + transMat[0] + "px) translateY(" + -yPanLim + "px)";
+			}
+		else if ((transMat[1]-pos2)>=yPanLim){
+				manCont.style.webkitTransform="translateX(" + transMat[0] + "px) translateY(" + yPanLim + "px)";
+			}
+
 	  }
 
 	  function closeDragElement() {
