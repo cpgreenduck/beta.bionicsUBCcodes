@@ -15,6 +15,7 @@ if (is_IE()==false){
 	*/
 	function refAOS(){
 		setTimeout(function() {refAOS();}, 3000);
+		AOS.refresh();
 		//console.log('refreshed 3s');
 		//alert('refreshed 3s');
 	}
