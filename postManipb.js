@@ -106,5 +106,11 @@ if (is_IE()==false){
 	  // Modify behavior...
 	  setTimeout(function(){AOS.refresh();},100);
 	});
+	document.addEventListener("webkitvisibilitychange", function() {
+	  console.log( document.hidden );
+	  console.log('changevis');
+	  // Modify behavior...
+	  setTimeout(function(){AOS.refresh();},100);
+	});
 }
 
