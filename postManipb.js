@@ -102,6 +102,7 @@ if (is_IE()==false){
 	//refAOS();
 	document.addEventListener("visibilitychange", function() {
 	  console.log( document.hidden );
+	  console.log('changevis');
 	  // Modify behavior...
 	  setTimeout(function(){AOS.refresh();},100);
 	});
