@@ -109,7 +109,13 @@ if (is_IE()==false){
 	  console.log( document.hidden );
 	  // Modify behavior...
 	  setTimeout(function(){AOS.refresh();},100);
+	  	  setTimeout(function(){AOS.refresh();},3000);
 	});
-
+	document.addEventListener("webkitvisibilitychange", function() {
+	  console.log( document.hidden );
+	  // Modify behavior...
+	  setTimeout(function(){AOS.refresh();},100);
+	  	  setTimeout(function(){AOS.refresh();},3000);
+	});
 }
 
