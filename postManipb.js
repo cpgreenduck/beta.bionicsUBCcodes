@@ -15,6 +15,7 @@ if (is_IE()==false){
 	*/
 	function refAOS(){
 		setTimeout(function() {refAOS();}, 3000);
+		console.log('refreshed 3s');
 	}
 	var link = document.createElement( "link" );
 	link.href = "https://unpkg.com/aos@2.3.1/dist/aos.css";
