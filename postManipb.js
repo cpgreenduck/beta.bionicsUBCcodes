@@ -15,8 +15,8 @@ if (is_IE()==false){
 	*/
 	function refAOS(){
 		setTimeout(function() {refAOS();}, 3000);
-		console.log('refreshed 3s');
-		alert('refreshed 3s');
+		//console.log('refreshed 3s');
+		//alert('refreshed 3s');
 	}
 	var link = document.createElement( "link" );
 	link.href = "https://unpkg.com/aos@2.3.1/dist/aos.css";
@@ -107,19 +107,9 @@ if (is_IE()==false){
 	refAOS();
 	document.addEventListener("visibilitychange", function() {
 	  console.log( document.hidden );
-	  console.log('changevis');
-	  alert('change vis');
 	  // Modify behavior...
 	  setTimeout(function(){AOS.refresh();},100);
-	  	  setTimeout(function(){AOS.refresh();},2000);
 	});
-	document.addEventListener("webkitvisibilitychange", function() {
-	  console.log( document.hidden );
-	  console.log('changevis');
-	  alert('change vis!');
-	  // Modify behavior...
-	  setTimeout(function(){AOS.refresh();},100);
-	  	  setTimeout(function(){AOS.refresh();},2000);
-	});
+
 }
 
