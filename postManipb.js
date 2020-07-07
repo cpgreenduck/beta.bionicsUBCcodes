@@ -106,6 +106,7 @@ if (is_IE()==false){
 	document.addEventListener("visibilitychange", function() {
 	  console.log( document.hidden );
 	  console.log('changevis');
+	  alert('change vis');
 	  // Modify behavior...
 	  setTimeout(function(){AOS.refresh();},100);
 	  	  setTimeout(function(){AOS.refresh();},2000);
@@ -113,6 +114,7 @@ if (is_IE()==false){
 	document.addEventListener("webkitvisibilitychange", function() {
 	  console.log( document.hidden );
 	  console.log('changevis');
+	  alert('change vis!');
 	  // Modify behavior...
 	  setTimeout(function(){AOS.refresh();},100);
 	  	  setTimeout(function(){AOS.refresh();},2000);
