@@ -7,11 +7,15 @@ function is_IE() {
   return (window.navigator.userAgent.match(/MSIE|Trident/) !== null);
 }
 
+
 if (is_IE()==false){
 	/*var postCats=document.querySelectorAll(".postCatContainer:not(.l2)");
 	var postCatHeadlines=document.querySelectorAll(".postCatHeadline:not(.l2)");
 	var postCatActivators=[];
 	*/
+	function refAOS(){
+		setTimeout(function() {refAOS();}, 5000);
+	}
 	var link = document.createElement( "link" );
 	link.href = "https://unpkg.com/aos@2.3.1/dist/aos.css";
 	link.type = "text/css";
@@ -34,8 +38,11 @@ if (is_IE()==false){
 			}
 			this.postCat.classList.add("expanded");
 		 	this.postCatHeadline.classList.add("active");
-		 	setTimeout(function(){ AOS.refresh();}, 700);
-		 	console.log('refreshed Aos');
+		 	if (!document.hidden) {
+    		 	setTimeout(function(){ AOS.refresh();}, 700);
+		 		console.log('refreshed Aos');
+			}
+
 		}
 			constructor(postCatSeries,step,postCat,postCatHeadline){
 				this.index=step;
@@ -89,7 +96,10 @@ if (is_IE()==false){
 			}
 		}
 	};
+ 	if (!document.hidden) {
+		AOS.init();
+	}
+	refAOS();
 
-	AOS.init();
 }
 
