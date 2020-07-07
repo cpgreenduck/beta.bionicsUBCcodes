@@ -13,9 +13,9 @@ if (is_IE()==false){
 	var postCatHeadlines=document.querySelectorAll(".postCatHeadline:not(.l2)");
 	var postCatActivators=[];
 	*/
-	function refAOS(){
-		setTimeout(function() {refAOS();}, 5000);
-	}
+	//function refAOS(){
+	//	setTimeout(function() {refAOS();}, 5000);
+	//}
 	var link = document.createElement( "link" );
 	link.href = "https://unpkg.com/aos@2.3.1/dist/aos.css";
 	link.type = "text/css";
@@ -99,7 +99,11 @@ if (is_IE()==false){
 
 	AOS.init();
 
-	refAOS();
-
+	//refAOS();
+	document.addEventListener("visibilitychange", function() {
+	  console.log( document.hidden );
+	  // Modify behavior...
+	  AOS.refresh();
+	});
 }
 
