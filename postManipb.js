@@ -78,6 +78,9 @@ if (is_IE()==false){
 		 return(false);
 	}
 
+
+
+
 	var l1=new postCatSeries(".postCatContainer:not(.l2)",".postCatHeadline:not(.l2)");
 	var l2=new postCatSeries(".postCatContainer.l2",".postCatHeadline.l2");
 
@@ -105,12 +108,14 @@ if (is_IE()==false){
 	  console.log('changevis');
 	  // Modify behavior...
 	  setTimeout(function(){AOS.refresh();},100);
+	  	  setTimeout(function(){AOS.refresh();},2000);
 	});
 	document.addEventListener("webkitvisibilitychange", function() {
 	  console.log( document.hidden );
 	  console.log('changevis');
 	  // Modify behavior...
 	  setTimeout(function(){AOS.refresh();},100);
+	  	  setTimeout(function(){AOS.refresh();},2000);
 	});
 }
 
