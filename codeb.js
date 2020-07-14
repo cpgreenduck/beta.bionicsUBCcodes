@@ -335,14 +335,14 @@ if (is_IE()==false){
 	//	window.onmousewheel = document.onmousewheel = preventDefault;
 		window.addEventListener(wheelEvent, preventDefault,wheelOpt);
 		window.addEventListener('DOMMouseScroll',preventDefault,false);
-		window.addEventListener('touchmove',preventDefault,wheelOpt);
+		//window.addEventListener('touchmove',preventDefault,wheelOpt);
 	}
 
 	function enableWindowScroll(){
 		console.log("enable window scroll");
 		window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
 		window.removeEventListener('DOMMouseScroll',preventDefault,false);
-		window.removeEventListener('touchmove',preventDefault,wheelOpt);
+		//window.removeEventListener('touchmove',preventDefault,wheelOpt);
 	}
 	//document.addEventListener("touchstart",function(){},{passive:false});
 	//document.addEventListener("wheel",function(){},{passive:false});
