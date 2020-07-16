@@ -46,7 +46,7 @@ padding-bottom:10px;
 	background-size:100%;
 }
 #content h1{
-color:white;
+	color:white;
 }
 
 .navigation-links .pager{
@@ -57,6 +57,9 @@ color:white;
   display:none;
 }
 
+.hentry.page.publish.post-1.odd>h1{
+margin-left:20px;
+}
 .page-id-2496 .hentry.page.publish.post-1.odd>h1{
 	display:none;
 }
