@@ -225,6 +225,7 @@ display:none;
 .descriptionContainer{
 	border:none;
 	background:none;
+	padding:0;
 }
 .postThumbnail{
 	width:150px;
