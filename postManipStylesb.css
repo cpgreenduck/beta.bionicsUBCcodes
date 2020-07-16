@@ -47,6 +47,9 @@ padding-bottom:10px;
 	background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/06/SPINALCONNECTIONS4.png');
 	background-size:100%;
 }
+#content h1{
+color:white;
+}
 
 .navigation-links .pager{
 	display:none;
