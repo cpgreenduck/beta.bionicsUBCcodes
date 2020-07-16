@@ -193,7 +193,9 @@ display:none;
 	border-top-left-radius:10px;
 	margin:10px;
 }
-
+.postCatContainer h2{
+margin-left:20px;
+}
 
 .postContainer{
 	width:80%;
