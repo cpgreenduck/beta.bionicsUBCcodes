@@ -38,10 +38,14 @@ a{
 	display:none;
 }*/
 .entry-content{
-background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/06/SPINALCONNECTIONS4.png');
+/*background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/06/SPINALCONNECTIONS4.png');*/
 background-size:100%;
 padding-bottom:10px;
 }
+#content{
+	background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/06/SPINALCONNECTIONS4.png');
+}
+
 .navigation-links .pager{
 	display:none;
 }
@@ -54,10 +58,10 @@ padding-bottom:10px;
 /*.page-title.entry-title{
 
 display:none;
-}
-.hentry.page.private.post-1.odd{
-margin-top:-10px;
 }*/
+.hentry.page.private.post-1.odd>h1{
+	color:white;
+}
 
 #container{
 padding-top:0;
