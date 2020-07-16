@@ -76,6 +76,12 @@
 .name.field-item.one-third{
 	display:none;
 }
+.name.field-item.two-third{
+display:none;
+}
+.modal-header{
+display:none;
+}
 
 .page-id-1917 .span4>img, .page-id-1921 .span4>img, .page-id-2391 .span4>img{
   display:none;
