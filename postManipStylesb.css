@@ -19,6 +19,9 @@ a{
 	cursor:pointer;
 	text-decoration:none;
 }
+.page-id-2496 .hentry.page.private.post-1.odd>h1{
+	display:none;
+}
 
 .full-width-container .expand.row-fluid, #container{
 	padding-left:0;
