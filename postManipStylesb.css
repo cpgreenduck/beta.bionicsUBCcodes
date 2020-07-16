@@ -19,9 +19,7 @@ a{
 	cursor:pointer;
 	text-decoration:none;
 }
-.page-id-2496 .hentry.page.private.post-1.odd>h1{
-	display:none;
-}
+
 
 
 .full-width-container .expand.row-fluid, #container{
@@ -59,17 +57,20 @@ color:white;
   display:none;
 }
 
+.page-id-2496 .hentry.page.publish.post-1.odd>h1{
+	display:none;
+}
 
 /*.page-title.entry-title{
 
 display:none;
 }*/
-.hentry.page.private.post-1.odd>h1{
+.hentry.page.publish.post-1.odd>h1{
 	color:white;
 }
 
 #container{
-padding-top:0;
+	padding-top:0;
 }
 
 .postCatNav{
