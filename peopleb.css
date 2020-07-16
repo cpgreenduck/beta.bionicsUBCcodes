@@ -4,6 +4,10 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+p{
+	font-size:1em;
+	color:#000;
+}
 
 .iso-nav{
  clear:both;
