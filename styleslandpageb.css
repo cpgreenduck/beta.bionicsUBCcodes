@@ -65,10 +65,12 @@
   font-weight:bolder;
   opacity:0.8;
 }
-.frontpage-item>h1{
+.frontpage-item>h1, #accomplish .frontpage-item>h1{
 	color:#002145;
 	font-size:40px;
 }
+
+
 .frontpage-item>h2{
 	font-size:32px;
 		color:#002145;

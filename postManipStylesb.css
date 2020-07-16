@@ -5,13 +5,20 @@
 * Browsers: last 4 version
 */
 
-p, h1, h2, h3, h4, a{
+
+
+h1, h2, h3, h4, a{
 	font-family:sans-serif;
 	color:#185685;
 	text-decoration:none;
 	-webkit-transition:all 1s ease-out;
 	-o-transition:all 1s ease-out;
 	transition:all 1s ease-out;
+}
+
+.entry-content p{
+	font-size:1em;
+	color:#000;
 }
 
 a{
