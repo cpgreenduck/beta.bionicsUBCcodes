@@ -358,8 +358,11 @@ if (is_IE()==false){
 	}
 	console.log('testing!!');
 
-
-
+	function reHomeMan(elmnt){
+		elmnt.style.webkitTransform="translateX(0px) translateY(0px)";
+	}
+	
+	window.addEventListener('resize',reHomeMan(manCont));
 	/* get transform values of element*/
 	function getTransform(obj){
 	 const transArr = [];
