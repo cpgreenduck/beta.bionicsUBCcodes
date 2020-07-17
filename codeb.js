@@ -359,7 +359,7 @@ if (is_IE()==false){
 	console.log('testing!!');
 
 	function reHomeMan(elmnt){
-		elmnt.style.webkitTransform="translateX(0px) translateY(0px)";
+		elmnt.style.webkitTransform="translateX(0) translateY(0)";
 	}
 	
 	window.addEventListener('resize',reHomeMan(manCont));
