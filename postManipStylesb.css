@@ -202,7 +202,6 @@ display:none;
 }
 .postCatContainer.expanded.noanim{
 	border-top-left-radius:10px;
-	margin:10px;
 }
 .postCatContainer h2{
 /*margin-left:15px;*/
