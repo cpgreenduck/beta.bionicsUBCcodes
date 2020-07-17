@@ -98,8 +98,9 @@ if (is_IE()==false){
 				console.log('trying to activate number');
 			}
 			else{
-				l1.postCatActivators[0].activate();
+				l1.postCatActivators[0].activate();			
 			}
+			l2.postCatActivators[0].activate();
 		}
 	};
 
