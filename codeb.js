@@ -348,6 +348,10 @@ if (is_IE()==false){
 	//document.addEventListener("wheel",function(){},{passive:false});
 	//document.addEventListener("mouseenter",function(){},{passive:false});
 	//document.addEventListener("mouseout",function(){},{passive:false});
+	function reHomeMan(elmnt){
+		console.log("rehome");
+		elmnt.style.webkitTransform="translateX(0) translateY(0)";
+	}
 
 	man.addEventListener("wheel",function(event){ if(event.deltaY<0) zoomInToggle(); else if(event.deltaY>0) zoomOutToggle();}, {passive:false});
 	manCont.addEventListener("mouseenter",disableWindowScroll);
@@ -356,13 +360,9 @@ if (is_IE()==false){
 		hotspots[step].addEventListener("wheel",function(event){ if(event.deltaY<0) zoomInToggle(); else if(event.deltaY>0) zoomOutToggle();});
 		hotspots[step].addEventListener("mouseenter",disableWindowScroll);
 	}
-	console.log('testing!!');
+	window.addEventListener("resize",reHomeMan(manCont));
 
-	function reHomeMan(elmnt){
-		elmnt.style.webkitTransform="translateX(0) translateY(0)";
-	}
-	
-	window.addEventListener('resize',reHomeMan(manCont));
+
 	/* get transform values of element*/
 	function getTransform(obj){
 	 const transArr = [];
