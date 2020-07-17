@@ -348,9 +348,9 @@ if (is_IE()==false){
 	//document.addEventListener("wheel",function(){},{passive:false});
 	//document.addEventListener("mouseenter",function(){},{passive:false});
 	//document.addEventListener("mouseout",function(){},{passive:false});
-	function reHomeMan(elmnt){
+	function reHomeMan(manCont){
 		console.log("rehome");
-		elmnt.style.webkitTransform="translateX(0) translateY(0)";
+		manCont.style.webkitTransform="translateX(0) translateY(0)";
 	}
 
 	man.addEventListener("wheel",function(event){ if(event.deltaY<0) zoomInToggle(); else if(event.deltaY>0) zoomOutToggle();}, {passive:false});
@@ -360,7 +360,7 @@ if (is_IE()==false){
 		hotspots[step].addEventListener("wheel",function(event){ if(event.deltaY<0) zoomInToggle(); else if(event.deltaY>0) zoomOutToggle();});
 		hotspots[step].addEventListener("mouseenter",disableWindowScroll);
 	}
-	window.addEventListener("resize",reHomeMan(manCont));
+	window.addEventListener("resize",reHomeMan);
 
 
 	/* get transform values of element*/
