@@ -5,7 +5,9 @@
 * Browsers: last 4 version
 */
 
-
+body{
+	font-family:sans-serif;
+	}
 
 h1, h2, h3, h4, a{
 	font-family:sans-serif;
