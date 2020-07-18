@@ -184,9 +184,9 @@ display:none;
 }
 .postCatContainer.def{
 	max-height:10000px;
-	-webkit-transition:all 0s ease 0s;
-	-o-transition:all 0s ease 0s;
-	transition:all 0s ease 0s;
+	-webkit-transition:all 0s ease 0s !important;
+	-o-transition:all 0s ease 0s !important;
+	transition:all 0s ease 0s !important;
 }
 .postCatContainer.expanded{
 	max-height:10000px;
