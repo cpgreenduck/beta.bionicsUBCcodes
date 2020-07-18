@@ -38,11 +38,13 @@ if(false){
 					this.postCatSeries.postCats[step1].classList.remove("expanded");
 		   		this.postCatSeries.postCatHeadlines[step1].classList.remove("active");
 			}
+			setTimeout(function(){},100);
 			for (let step1=0;step1<this.postCatSeries.postCats.length;step1++){
 					this.postCatSeries.postCats[step1].classList.remove("def");
 			}
 			this.postCat.classList.add("expanded");
 		 	this.postCatHeadline.classList.add("active");
+		 	
 
  		 	setTimeout(function(){ AOS.refresh();}, 700);
 	 		console.log('refreshed Aos');
