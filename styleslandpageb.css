@@ -130,6 +130,9 @@
 	opacity:1;
 	/*display:none;*/
 }
+.page-id-2496 .map-div-overlay-full{
+	display:none;
+}
 
 #partnersmapCont .postCatContainer.map-div-overlay{
 	position:absolute;
