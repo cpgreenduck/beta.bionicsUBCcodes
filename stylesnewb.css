@@ -591,7 +591,7 @@ cursor:pointer;
 .cont1 .controlView .controlSelect#zoominSelect{	
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/06/zoomin.png");
 }
-.cont1 .controlView .controlSelect#rotateSelect:hover{	
+/*.cont1 .controlView .controlSelect#rotateSelect:hover{	
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/roth.png");
 }
 .cont1 .controlView .controlSelect#zoomoutSelect:hover{	
@@ -599,7 +599,7 @@ cursor:pointer;
 }
 .cont1 .controlView .controlSelect#zoominSelect:hover{	
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/zoominh.png");
-}
+}*/
 
 .cont1 .controlView .panholder{
 	position:relative;
@@ -640,10 +640,10 @@ cursor:pointer;
 	left:60px;
 	top:30px;
 }
-#panupSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panuph.png");}
+/*#panupSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panuph.png");}
 #panleftSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panlefth.png");}
 #pandownSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/pandownh.png");}
-#panrightSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panrighth.png");}
+#panrightSelect:hover{	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/panrighth.png");}*/
 
 
 
