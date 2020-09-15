@@ -790,10 +790,10 @@ to { opacity: 1}
 	to{ -webkit-transform: translateX(-2700px); transform: translateX(-2700px)}
 }
 @-webkit-keyframes manunrot{
-	from{ -webkit-transform:translateX(-5400px); transform:translateX(-5400px)}
+	from{ -webkit-transform:translateX(-2700px); transform:translateX(-2700px)}
 	to{ -webkit-transform: translateX(0); transform: translateX(0)}
 }
 @keyframes manunrot{
-	from{ -webkit-transform:translateX(-5400px); transform:translateX(-5400px)}
+	from{ -webkit-transform:translateX(-2700px); transform:translateX(-2700px)}
 	to{ -webkit-transform: translateX(0); transform: translateX(0)}
 }
