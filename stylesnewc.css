@@ -299,7 +299,7 @@ cursor:pointer;
 	text-align: center;
 	position: relative;
 	display: block;
-	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spot1.png");
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spot1-e1600143566566.png");
 	background-size:100%;
 	margin:5px;
 	opacity:1;
@@ -310,7 +310,7 @@ cursor:pointer;
  	transition: all 0.5s ease-out;
 }
 .container1 .hotspot:hover{
-	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spothover1.png");
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spothover1-e1600143594813.png");
 	opacity:1;
   -webkit-animation: slide 1s ease;
           animation: slide 1s ease;
@@ -321,7 +321,7 @@ cursor:pointer;
   transition: all 0.5s ease-in;
 }
 .container1 .hotspot.active{
-	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spothover1.png");
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spothover1-e1600143594813.png");
 	opacity:1;
 	-webkit-transition: all 0.5s ease-in;
 	-o-transition: all 0.5s ease-in;
