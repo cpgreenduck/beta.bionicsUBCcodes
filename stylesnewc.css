@@ -286,9 +286,9 @@ cursor:pointer;
 	/*transition: background-position 0.1s step-end, transform 0.5s steps(24);*/
 	-webkit-animation: manrot 0.5s steps(12);
 	        animation: manrot 0.5s steps(12);
-	-webkit-transform:translateX(-5400px);
-	    -ms-transform:translateX(-5400px);
-	        transform:translateX(-5400px);
+	-webkit-transform:translateX(-2700px);
+	    -ms-transform:translateX(-2700px);
+	        transform:translateX(-2700px);
 }
 
 .container1 .hotspot{
