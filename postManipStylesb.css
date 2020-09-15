@@ -6,7 +6,7 @@
 */
 
 body{
-	font-family:sans-serif;
+	/*font-family:sans-serif;*/
 	}
 
 h1, h2, h3, h4, a{
@@ -19,7 +19,7 @@ h1, h2, h3, h4, a{
 }
 
 .entry-content p{
-	font-size:1em;
+	/*font-size:1em;*/
 	color:#000;
 }
 
