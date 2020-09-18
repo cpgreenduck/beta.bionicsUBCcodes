@@ -240,7 +240,7 @@ if (is_IE()==false){
 	let map=document.querySelector(".map-div-overlay-full");
 	map.style.display="block";
 
-	const imageUrl = "http://apsc-bionics.sites.olt.ubc.ca/files/2020/09/output4-scaled.jpg";
+	const imageUrl = "http://apsc-bionics.sites.olt.ubc.ca/files/2020/09/output4.jpg";
 	let bgElement = document.querySelector(".bg-lazy");
 	let loadingElement=document.querySelector("#loading");
 	loadingElement.innerHTML = "<h1>Loading</h1>";
